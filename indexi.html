@@ -130,22 +130,11 @@
 </head>
 <body>
 
-<!-- API KEY BOX -->
-<div class="apibox" id="apikeyBox">
-  <label>🔑 Clé API Anthropic — nécessaire pour la mise à jour automatique des prix</label>
-  <input type="password" id="apikeyInput" placeholder="sk-ant-api03-..." autocomplete="off">
-  <div class="hint">
-    Ta clé est stockée uniquement dans ton navigateur (localStorage). Elle n'est jamais envoyée ailleurs qu'à api.anthropic.com.
-    Obtiens-en une sur <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a>.
-  </div>
-  <button class="btn" onclick="saveApiKey()" style="width:fit-content">Enregistrer la clé</button>
-</div>
-
 <!-- STATUS BAR -->
 <div class="statusbar">
   <div class="live"><div class="dot"></div>Veille active — soldes ouverts le 24 juin 2026</div>
   <span id="statusLabel">Chargement…</span>
-  <button class="btn" id="updateBtn" onclick="runUpdate()">🔄 Mettre à jour aujourd'hui</button>
+  <button class="btn" onclick="location.reload()">🔄 Actualiser</button>
 </div>
 
 <!-- HEADER -->
@@ -363,7 +352,7 @@
 </div>
 
 <script>
-// ── Données initiales ──────────────────────────────────────────────────────
+// ── Données initiales (fallback si data.json inaccessible) ──────────────────
 const SEED = {
   lastUpdate: "2026-06-22",
   prices: {
@@ -373,45 +362,32 @@ const SEED = {
     idealo:    [{ price: 1171, date: "22/06" }],
   },
   news: [
-    { date: "22 juin", text: "🚀 <b>Lancement de la veille.</b> Soldes J-2. Prix établis : Idealo 1 171 €, Amazon 1 309 €, Fnac ~1 379 €, CDiscount 1 353 €." },
-    { date: "22 juin", text: "📊 <b>CompaRecycle</b> estime l'iPhone 15 Plus jusqu'à 425 € en bon état — meilleure reprise identifiée (virement sans obligation d'achat)." },
-    { date: "22 juin", text: "📉 <b>Amazon</b> avait proposé le 256 Go à 1 309 € le 17 juin (-165 €). À re-surveiller dès l'ouverture des soldes." },
+    { date: "22 juin", text: "🚀 <b>Lancement de la veille.</b> Soldes J-2. Prix : Idealo 1 171 €, Amazon 1 309 €, Fnac ~1 379 €, CDiscount 1 353 €." },
+    { date: "22 juin", text: "📊 <b>CompaRecycle</b> estime l’iPhone 15 Plus jusqu’à 425 € en bon état." },
+    { date: "22 juin", text: "📉 <b>Amazon</b> avait 1 309 € le 17 juin. À re-surveiller dès l’ouverture des soldes." },
   ],
 };
 
 const VENDORS = ["amazon", "fnac", "cdiscount", "idealo"];
 const VLABELS = { amazon: "Amazon", fnac: "Fnac", cdiscount: "CDiscount", idealo: "Idealo" };
-const KEY = "virage_iphone_v3";
+function fmt(n) { return n.toLocaleString("fr-FR") + " €"; }
 
-function load() { try { const r = localStorage.getItem(KEY); return r ? JSON.parse(r) : null; } catch { return null; } }
-function save(d) { try { localStorage.setItem(KEY, JSON.stringify(d)); } catch {} }
-function fmt(n) { return n.toLocaleString("fr-FR") + " €"; }
-function getApiKey() { return localStorage.getItem("virage_apikey") || ""; }
+let history = SEED;
 
-function saveApiKey() {
-  const k = document.getElementById("apikeyInput").value.trim();
-  if (!k) return alert("Clé vide.");
-  localStorage.setItem("virage_apikey", k);
-  document.getElementById("apikeyBox").style.display = "none";
-  alert("Clé enregistrée ✓");
+// ── Init : charge data.json poussé chaque matin par Cowork ──────────────────
+async function init() {
+  try {
+    const resp = await fetch('./data.json?t=' + Date.now());
+    if (resp.ok) history = await resp.json();
+  } catch(e) { /* fallback SEED */ }
+  render();
+  document.getElementById("statusLabel").textContent = "Mis à jour le " + (history.lastUpdate || "—");
 }
 
-// ── Init ───────────────────────────────────────────────────────────────────
-let history = load() || SEED;
-if (!load()) save(history);
-
-// Masquer la box API key si déjà enregistrée
-if (getApiKey()) document.getElementById("apikeyBox").style.display = "none";
-else document.getElementById("apikeyInput").value = getApiKey();
-
-render();
-document.getElementById("statusLabel").textContent = "Dernière mise à jour : " + history.lastUpdate;
-
-// ── RENDER ─────────────────────────────────────────────────────────────────
+// ── RENDER ──────────────────────────────────────────────────────────────────
 function render() {
   const prices = history.prices;
 
-  // Best price
   const vals = VENDORS.map(v => prices[v]?.slice(-1)[0]?.price || 0).filter(p => p > 0);
   const best = Math.min(...vals);
   const bestV = VENDORS.find(v => (prices[v]?.slice(-1)[0]?.price || 0) === best);
@@ -427,7 +403,6 @@ function render() {
   document.getElementById("refAmz").textContent = amzLast ? fmt(amzLast) : "—";
   setDelta("refAmzDelta", amzLast, amzPrev);
 
-  // Tableau best nu
   document.getElementById("tBestNu").textContent = fmt(best);
   document.getElementById("tBestNet").textContent = "~" + fmt(best - 425) + " net";
   document.getElementById("tBestTotal").textContent = "~" + fmt(Math.round(best - 425 + 13.99 * 24));
@@ -437,21 +412,21 @@ function render() {
   hg.innerHTML = "";
   VENDORS.forEach(v => {
     const entries = [...(prices[v] || [])].slice(-5).reverse();
-    let rows = entries.map((e, i) => {
+    const rows = entries.map((e, i) => {
       const p = entries[i + 1];
       let arr = "", ac = "#888";
       if (p) { if (e.price < p.price) { arr = "↓"; ac = "#4ade80"; } else if (e.price > p.price) { arr = "↑"; ac = "#f87171"; } else { arr = "→"; } }
-      return `<div class="hrow"><span class="hdate">${e.date}</span>${arr ? `<span class="harr" style="color:${ac}">${arr}</span>` : ""}<span class="hprice">${fmt(e.price)}</span></div>`;
+      return '<div class="hrow"><span class="hdate">' + e.date + '</span>' + (arr ? '<span class="harr" style="color:' + ac + '">' + arr + '</span>' : '') + '<span class="hprice">' + fmt(e.price) + '</span></div>';
     }).join("");
-    hg.innerHTML += `<div class="hcard"><div class="hcard-title">${VLABELS[v]}</div>${rows}</div>`;
+    hg.innerHTML += '<div class="hcard"><div class="hcard-title">' + VLABELS[v] + '</div>' + rows + '</div>';
   });
 
   // Nu cards
   const nuDefs = [
-    { vendor: "🥇 Idealo marketplace", key: "idealo", detail: "Bleu intense 256 Go · vendeur BLUESKY-EU · livraison ~27 juin · code promo dispo", pro: "✓ Prix marché le plus bas", con: "⚠ Vendeur peu noté (1,7/5) — vérifier · pas de reprise directe", reprise: 425, repriseLabel: "CompaRecycle", green: true },
-    { vendor: "Amazon France", key: "amazon", detail: "256 Go · offre repérée le 17 juin · Prime rapide · reprise Amazon Renew possible", pro: "✓ Fiable, retours 30 jours", con: "⚠ Reprise Amazon (~220–290 €) < CompaRecycle — faire reprise séparément", reprise: 425, repriseLabel: "CompaRecycle", green: false },
+    { vendor: "🥇 Idealo marketplace", key: "idealo", detail: "Bleu intense 256 Go · livraison express · code promo dispo", pro: "✓ Prix marché le plus bas", con: "⚠ Vérifier le vendeur · pas de reprise directe", reprise: 425, repriseLabel: "CompaRecycle", green: true },
+    { vendor: "Amazon France", key: "amazon", detail: "256 Go · Prime rapide · reprise Amazon Renew possible", pro: "✓ Fiable, retours 30 jours", con: "⚠ Reprise Amazon (~220–290 €) < CompaRecycle — faire reprise séparément", reprise: 425, repriseLabel: "CompaRecycle", green: false },
     { vendor: "CDiscount", key: "cdiscount", detail: "256 Go · vérifier dispo bleu intense · pas de reprise directe", pro: "✓ Vendeur agréé connu", con: "⚠ Faire reprise séparément via CompaRecycle", reprise: 425, repriseLabel: "CompaRecycle", green: false },
-    { vendor: "Fnac (adhérent Fnac+)", key: "fnac", detail: "Bleu intense 256 Go · -5% adhérent · livraison 1j · reprise Fnac possible en magasin", pro: "✓ SAV fiable · combo achat + reprise magasin Toulouse", con: "⚠ Reprise Fnac (~250–310 €) en carte cadeau seulement", reprise: 300, repriseLabel: "Fnac (carte cadeau)", green: false },
+    { vendor: "Fnac (adhérent Fnac+)", key: "fnac", detail: "Bleu intense 256 Go · -5% adhérent · livraison 1j", pro: "✓ SAV fiable · combo achat + reprise magasin", con: "⚠ Reprise Fnac (~250–310 €) en carte cadeau uniquement", reprise: 300, repriseLabel: "Fnac (carte cadeau)", green: false },
   ];
   const ng = document.getElementById("nuGrid");
   ng.innerHTML = "";
@@ -459,125 +434,35 @@ function render() {
     const rawP = prices[c.key]?.slice(-1)[0]?.price || 0;
     const net = rawP > 0 ? rawP - c.reprise : null;
     const netColor = net !== null && net < 1000 ? "#4ade80" : "#fbbf24";
-    ng.innerHTML += `
-      <div class="card${c.green ? " green" : ""}">
-        <div class="nhead">
-          <span class="nvendor">${c.vendor}</span>
-          <span class="nprice" style="color:${c.green ? "#4ade80" : "#fff"}">${rawP ? fmt(rawP) : "—"}</span>
-        </div>
-        <div class="muted2">${c.detail}</div>
-        <div class="pro">${c.pro}</div>
-        <div class="con">${c.con}</div>
-        ${net !== null ? `<div class="nnet">💰 Net après reprise ${c.repriseLabel} ${fmt(c.reprise)} : <span style="color:${netColor}">${fmt(net)}</span></div>` : ""}
-      </div>`;
+    ng.innerHTML += '<div class="card' + (c.green ? " green" : "") + '">'
+      + '<div class="nhead"><span class="nvendor">' + c.vendor + '</span>'
+      + '<span class="nprice" style="color:' + (c.green ? "#4ade80" : "#fff") + '">' + (rawP ? fmt(rawP) : "—") + '</span></div>'
+      + '<div class="muted2">' + c.detail + '</div>'
+      + '<div class="pro">' + c.pro + '</div>'
+      + '<div class="con">' + c.con + '</div>'
+      + (net !== null ? '<div class="nnet">💰 Net après reprise ' + c.repriseLabel + ' ' + fmt(c.reprise) + ' : <span style="color:' + netColor + '">' + fmt(net) + '</span></div>' : '')
+      + '</div>';
   });
 
   // News
   const nc = document.getElementById("newsContainer");
   nc.innerHTML = [...history.news].reverse().slice(0, 12).map((n, i) =>
-    `<div class="news-item${i === 0 ? " new-item" : ""}">
-      <span class="ndate">${n.date}</span>
-      <span class="ntext">${n.text}</span>
-    </div>`
+    '<div class="news-item' + (i === 0 ? " new-item" : "") + '">'
+    + '<span class="ndate">' + n.date + '</span>'
+    + '<span class="ntext">' + n.text + '</span>'
+    + '</div>'
   ).join("");
 }
 
 function setDelta(id, curr, prev) {
   const el = document.getElementById(id);
-  if (!el || !prev || prev === curr) { if (el) { el.textContent = ""; } return; }
+  if (!el || !prev || prev === curr) { if (el) el.textContent = ""; return; }
   const diff = curr - prev;
-  el.textContent = (diff > 0 ? "▲ +" : "▼ ") + Math.abs(diff) + " € vs veille";
+  el.textContent = (diff > 0 ? "▲ +" : "▼ ") + Math.abs(diff) + " € vs veille";
   el.className = "cdelta " + (diff > 0 ? "up" : "down");
 }
 
-// ── UPDATE ─────────────────────────────────────────────────────────────────
-async function runUpdate() {
-  const apiKey = getApiKey();
-  if (!apiKey) {
-    document.getElementById("apikeyBox").style.display = "flex";
-    document.getElementById("apikeyBox").style.flexDirection = "column";
-    alert("Entre d'abord ta clé API Anthropic ci-dessus ↑");
-    return;
-  }
-
-  const btn = document.getElementById("updateBtn");
-  btn.disabled = true; btn.textContent = "⏳ Recherche en cours…";
-  document.getElementById("statusLabel").textContent = "Recherche des prix…";
-
-  const d = new Date();
-  const short = d.toLocaleDateString("fr-FR", { day: "2-digit", month: "2-digit" });
-  const long  = d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
-  const iso   = d.toISOString().slice(0, 10);
-
-  const prompt = `Tu es un assistant de veille prix pour l'iPhone 17 Pro Max 256 Go bleu intense en France.
-Date du jour : ${long} 2026.
-
-Recherche les prix actuels et réponds UNIQUEMENT avec un objet JSON valide, sans backticks ni texte avant/après :
-{"amazon":ENTIER,"fnac":ENTIER,"cdiscount":ENTIER,"idealo":ENTIER,"news":"phrase max 160 chars commençant par un emoji décrivant la principale nouveauté du jour (baisse de prix, nouvelle offre, info soldes...)"}
-
-Sources :
-- amazon : prix sur amazon.fr pour iPhone 17 Pro Max 256 Go bleu intense (vendeur Amazon ou Fulfilled by Amazon)
-- fnac : prix sur fnac.com sans remise adhérent
-- cdiscount : prix sur cdiscount.com
-- idealo : prix minimum sur idealo.fr pour iPhone 17 Pro Max 256 Go (bleu intense ou toutes couleurs si indispo)
-
-Si un prix est introuvable, mets 0.`;
-
-  try {
-    const resp = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
-        "anthropic-dangerous-direct-browser-access": "true",
-      },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6",
-        max_tokens: 1000,
-        tools: [{ type: "web_search_20250305", name: "web_search" }],
-        messages: [{ role: "user", content: prompt }],
-      }),
-    });
-
-    if (!resp.ok) {
-      const err = await resp.json().catch(() => ({}));
-      throw new Error(err.error?.message || resp.statusText);
-    }
-
-    const data = await resp.json();
-    const raw = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("");
-    const m = raw.match(/\{[\s\S]*?\}/);
-    let parsed = null;
-    if (m) { try { parsed = JSON.parse(m[0]); } catch {} }
-
-    if (parsed) {
-      VENDORS.forEach(v => {
-        if (!history.prices[v]) history.prices[v] = [];
-        const p = parseInt(parsed[v]);
-        if (p > 0) {
-          const last = history.prices[v].slice(-1)[0];
-          if (!last || last.date !== short) history.prices[v].push({ price: p, date: short });
-          else last.price = p;
-        }
-      });
-      history.news.push({ date: long, text: parsed.news || `🔄 Prix mis à jour le ${long}.` });
-    } else {
-      history.news.push({ date: long, text: `⚠️ Mise à jour partielle le ${long} — réponse inattendue. Vérifier manuellement sur Idealo et Amazon.` });
-    }
-
-    history.lastUpdate = iso;
-    save(history);
-    render();
-    document.getElementById("statusLabel").textContent = "Dernière mise à jour : " + iso;
-
-  } catch (err) {
-    document.getElementById("statusLabel").textContent = "Erreur : " + err.message;
-    alert("Erreur lors de la mise à jour :\n" + err.message);
-  }
-
-  btn.disabled = false; btn.textContent = "🔄 Mettre à jour aujourd'hui";
-}
+init();
 </script>
 </body>
 </html>

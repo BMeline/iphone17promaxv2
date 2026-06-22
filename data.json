@@ -1,0 +1,14 @@
+{
+  "lastUpdate": "2026-06-22",
+  "prices": {
+    "amazon":    [{"price": 1309, "date": "22/06"}],
+    "fnac":      [{"price": 1379, "date": "22/06"}],
+    "cdiscount": [{"price": 1353, "date": "22/06"}],
+    "idealo":    [{"price": 1171, "date": "22/06"}]
+  },
+  "news": [
+    {"date": "22 juin", "text": "🚀 <b>Lancement de la veille.</b> Soldes J-2. Prix établis : Idealo 1 171 €, Amazon 1 309 €, Fnac ~1 379 €, CDiscount 1 353 €."},
+    {"date": "22 juin", "text": "📊 <b>CompaRecycle</b> estime l'iPhone 15 Plus jusqu'à 425 € en bon état — meilleure reprise identifiée (virement sans obligation d'achat)."},
+    {"date": "22 juin", "text": "📉 <b>Amazon</b> avait proposé le 256 Go à 1 309 € le 17 juin (-165 €). À re-surveiller dès l'ouverture des soldes le 24/06."}
+  ]
+}
