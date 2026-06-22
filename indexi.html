@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille iPhone 17 Pro Max — Soldes 2026</title>
+<style>
+  :root {
+    --bg:#0f0f13; --bg2:#18181f; --bg3:#1a1a24; --border:#2a2a35;
+    --text:#e8e8f0; --muted:#555; --muted2:#888;
+    --accent:#6366f1; --green:#4ade80; --green-bg:#0c1f12; --green-b:#166534;
+    --yellow:#fbbf24; --red:#f87171; --blue:#7dd3fc;
+    --blue-bg:#0f1a2e; --blue-b:#1d4ed8;
+    --purple-bg:#13132a; --purple-b:#6366f1;
+    --gold-bg:#1a1000; --gold-b:#78350f; --gold:#fcd34d;
+    --orange-bg:#1a0e00; --orange-b:#92400e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);padding:20px;max-width:1020px;margin:0 auto;font-size:13px;line-height:1.5}
+  h1{font-size:20px;font-weight:800;color:#fff}
+  a{color:#818cf8;text-decoration:none} a:hover{text-decoration:underline}
+
+  /* STATUS */
+  .statusbar{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:9px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:8px}
+  .live{display:flex;align-items:center;gap:7px;color:var(--green);font-weight:700;font-size:12px}
+  .dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  #statusLabel{font-size:12px;color:var(--muted2)}
+
+  /* BUTTON */
+  .btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s}
+  .btn:hover{background:#4f46e5} .btn:disabled{background:#333;color:#555;cursor:default}
+
+  /* API KEY */
+  .apibox{background:var(--gold-bg);border:1px solid var(--gold-b);border-radius:10px;padding:14px;margin-bottom:18px;display:flex;flex-direction:column;gap:8px}
+  .apibox label{font-size:12px;color:var(--gold);font-weight:700}
+  .apibox input{background:#111;border:1px solid #444;border-radius:6px;color:#fff;padding:7px 10px;font-size:12px;font-family:monospace;width:100%}
+  .apibox .hint{font-size:11px;color:#a16207}
+
+  /* SECTION TITLES */
+  .st{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:24px 0 10px;border-bottom:1px solid #222;padding-bottom:5px}
+
+  /* GRIDS */
+  .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  @media(max-width:700px){.g4,.g3{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}}
+  @media(max-width:420px){.g4,.g3,.g2{grid-template-columns:1fr}}
+
+  /* CARDS */
+  .card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:13px}
+  .card.hi{background:var(--purple-bg);border-color:var(--purple-b)}
+  .card.green{background:var(--green-bg);border-color:var(--green)}
+  .card.blue{background:var(--blue-bg);border-color:var(--blue-b);border-radius:12px;padding:18px}
+  .card.gold{background:var(--gold-bg);border-color:var(--gold-b)}
+  .card.orange{background:var(--orange-bg);border-color:var(--orange-b)}
+  .card.purple{background:var(--purple-bg);border-color:var(--purple-b)}
+  .card.new-item{border-color:var(--accent)}
+
+  .clabel{font-size:11px;color:var(--muted2);margin-bottom:5px;line-height:1.4;text-align:center}
+  .cbig{font-size:20px;font-weight:800;text-align:center}
+  .cnote{font-size:10px;color:var(--muted);margin-top:3px;text-align:center}
+  .cdelta{font-size:11px;font-weight:700;text-align:center;margin-top:3px}
+  .cdelta.up{color:var(--red)} .cdelta.down{color:var(--green)} .cdelta.same{color:var(--muted2)}
+
+  /* BADGE / TAG */
+  .badge{display:inline-block;border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700}
+  .badge.g{background:#16a34a;color:#fff} .badge.o{background:#ea580c;color:#fff}
+  .badge.r{background:#dc2626;color:#fff} .badge.gr{background:#444;color:#ccc}
+  .tag{display:inline-block;border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;margin-left:5px}
+  .tag.b{background:#1e3a5f;color:#7dd3fc} .tag.g{background:#14532d;color:#86efac} .tag.o{background:#431407;color:#fdba74}
+
+  /* HISTORY */
+  .hcard{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px}
+  .hcard-title{font-size:11px;color:var(--muted2);font-weight:600;margin-bottom:7px}
+  .hrow{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid #1e1e28;font-size:12px}
+  .hrow:last-child{border-bottom:none}
+  .hdate{color:var(--muted)} .hprice{font-weight:700}
+  .harr{font-size:10px;margin:0 3px}
+
+  /* REPRISE */
+  .rhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .rvendor{font-weight:700;font-size:13px}
+  .rprice{font-size:17px;font-weight:800}
+  .pro{font-size:12px;color:#86efac;margin-top:5px}
+  .con{font-size:12px;color:var(--red)}
+  .combined{font-size:12px;font-weight:700;color:var(--yellow);margin-top:6px}
+
+  /* TABLE */
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th{background:var(--bg3);color:var(--muted2);font-weight:600;padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);font-size:12px}
+  td{padding:9px 10px;border-bottom:1px solid #1e1e28;vertical-align:top}
+  tr.best td{background:#0f2a1a} tr.cur td{background:#1a1200}
+  tr:hover td{background:#18182a} tr.best:hover td{background:#0f3320} tr.cur:hover td{background:#1e1500}
+  .tname{font-weight:700} .tsub{font-size:11px;color:var(--muted2);margin-top:2px}
+  .tprice{font-size:15px;font-weight:800}
+  .total-g{color:var(--green);font-weight:800;font-size:15px}
+  .total-y{color:var(--yellow);font-weight:700}
+  .total-r{color:var(--red);font-weight:700}
+  .treprise{font-size:11px;color:#86efac;margin-top:3px}
+
+  /* NU CARDS */
+  .nhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .nvendor{font-weight:700;font-size:14px}
+  .nprice{font-size:18px;font-weight:800}
+  .nnet{font-size:12px;font-weight:700;color:var(--yellow);margin-top:7px;border-top:1px solid #2a2a35;padding-top:6px}
+
+  /* FORFAITS */
+  .fname{font-weight:700;font-size:13px;margin-bottom:4px}
+  .fprice{font-size:20px;font-weight:800}
+  .fdetail{font-size:11px;color:var(--muted2);margin-top:4px}
+  .fsaving{font-size:12px;font-weight:600;margin-top:6px}
+
+  /* VERDICT */
+  .vrow{display:flex;gap:10px;margin-bottom:10px;font-size:13px;line-height:1.6}
+  .vicon{flex-shrink:0}
+
+  /* NEWS */
+  .news-item{display:flex;gap:10px;align-items:flex-start;padding:11px 13px;background:var(--bg2);border:1px solid var(--border);border-radius:8px}
+  .ndate{font-size:11px;color:var(--muted2);white-space:nowrap;flex-shrink:0;margin-top:1px}
+  .ntext{font-size:13px;line-height:1.5}
+
+  .footnote{font-size:11px;color:var(--muted);margin-top:6px}
+  .muted2{font-size:12px;color:var(--muted2);line-height:1.5}
+  .flex-sb{display:flex;justify-content:space-between;align-items:center}
+  .header-meta{font-size:12px;color:var(--muted2);margin-top:4px}
+  .mb4{margin-bottom:4px} .mt4{margin-top:4px} .mt6{margin-top:6px} .mt8{margin-top:8px}
+  .fw7{font-weight:700} .fs12{font-size:12px}
+</style>
+</head>
+<body>
+
+<!-- API KEY BOX -->
+<div class="apibox" id="apikeyBox">
+  <label>🔑 Clé API Anthropic — nécessaire pour la mise à jour automatique des prix</label>
+  <input type="password" id="apikeyInput" placeholder="sk-ant-api03-..." autocomplete="off">
+  <div class="hint">
+    Ta clé est stockée uniquement dans ton navigateur (localStorage). Elle n'est jamais envoyée ailleurs qu'à api.anthropic.com.
+    Obtiens-en une sur <a href="https://console.anthropic.com/settings/keys" target="_blank">console.anthropic.com</a>.
+  </div>
+  <button class="btn" onclick="saveApiKey()" style="width:fit-content">Enregistrer la clé</button>
+</div>
+
+<!-- STATUS BAR -->
+<div class="statusbar">
+  <div class="live"><div class="dot"></div>Veille active — soldes ouverts le 24 juin 2026</div>
+  <span id="statusLabel">Chargement…</span>
+  <button class="btn" id="updateBtn" onclick="runUpdate()">🔄 Mettre à jour aujourd'hui</button>
+</div>
+
+<!-- HEADER -->
+<div style="margin-bottom:18px">
+  <h1>📱 Veille iPhone 17 Pro Max
+    <span class="tag b">Bleu intense</span>
+    <span class="tag g">256 Go</span>
+    <span class="tag o">512 Go</span>
+  </h1>
+  <div class="header-meta">Comparatif quotidien · téléphone seul + opérateurs + reprise iPhone 15 Plus · Sources : Apple FR, Idealo, Amazon, Fnac, CDiscount, Red SFR, Bouygues</div>
+</div>
+
+<!-- PRIX RÉFÉRENCE -->
+<div class="st">📌 Prix de référence catalogue</div>
+<div class="g4">
+  <div class="card" style="text-align:center">
+    <div class="clabel">Apple Store — 256 Go bleu</div>
+    <div class="cbig">1 329 €</div>
+    <div class="cnote">Catalogue officiel Apple FR</div>
+  </div>
+  <div class="card" style="text-align:center">
+    <div class="clabel">Apple Store — 512 Go bleu</div>
+    <div class="cbig">1 579 €</div>
+    <div class="cnote">Catalogue officiel Apple FR</div>
+  </div>
+  <div class="card hi" style="text-align:center">
+    <div class="clabel">Meilleur prix nu (256 Go)</div>
+    <div class="cbig" id="refBest" style="color:#818cf8">1 171 €</div>
+    <div class="cdelta" id="refBestDelta">—</div>
+    <div class="cnote" id="refBestSource">Idealo marketplace</div>
+  </div>
+  <div class="card hi" style="text-align:center">
+    <div class="clabel">Amazon actuel (256 Go)</div>
+    <div class="cbig" id="refAmz" style="color:#818cf8">1 309 €</div>
+    <div class="cdelta" id="refAmzDelta">—</div>
+    <div class="cnote">Mis à jour à chaque veille</div>
+  </div>
+</div>
+
+<!-- HISTORIQUE -->
+<div class="st">📈 Historique des prix observés (256 Go bleu intense)</div>
+<div class="g4" id="histGrid"></div>
+
+<!-- REPRISE -->
+<div class="st">♻️ Reprise iPhone 15 Plus — valeur & conditions par enseigne</div>
+<div class="g3">
+  <div class="card green">
+    <div class="rhead"><span class="rvendor">🥇 CompaRecycle</span><span class="rprice" style="color:var(--green)">jusqu'à 425 €</span></div>
+    <div class="muted2">Compare 50+ repreneurs. Virement bancaire direct, sans obligation d'achat. Meilleur taux constaté pour un 15 Plus en bon état.</div>
+    <div class="pro">✓ Prix le plus élevé · liberté totale · pas d'engagement</div>
+    <div class="combined">→ Combiner avec n'importe quel achat séparé</div>
+    <div class="mt6"><a href="https://comparecycle.com/revendre-smartphone/iphone" target="_blank" style="font-size:11px">comparecycle.com →</a></div>
+  </div>
+  <div class="card">
+    <div class="rhead"><span class="rvendor">Apple Trade In</span><span class="rprice">~290–320 €</span></div>
+    <div class="muted2">Crédit déductible uniquement sur achat Apple Store. Simple et immédiat. Taux US ≈ 320 $ (mars 2026).</div>
+    <div class="pro">✓ Immédiat, fiable</div>
+    <div class="con">⚠ Crédit Apple uniquement, pas de virement</div>
+    <div class="mt6"><a href="https://www.apple.com/fr/shop/buy-iphone/iphone-17-pro" target="_blank" style="font-size:11px">apple.com/fr →</a></div>
+  </div>
+  <div class="card">
+    <div class="rhead"><span class="rvendor">Bouygues (Recommerce)</span><span class="rprice">~200–300 € + 100 € bonus</span></div>
+    <div class="muted2">Bonus 100 € si souscription forfait 100 Go+ avec engagement 24 mois. Valeur reprise seule < spécialistes.</div>
+    <div class="pro">✓ Bonus intéressant couplé forfait</div>
+    <div class="con">⚠ Engagement 24 mois obligatoire pour le bonus</div>
+  </div>
+  <div class="card">
+    <div class="rhead"><span class="rvendor">Boulanger</span><span class="rprice">~250–320 €</span></div>
+    <div class="muted2">Estimation en ligne, dépôt en magasin ou point relais Chronopost. Carte cadeau immédiate si dépôt en magasin.</div>
+    <div class="pro">✓ Rapide en magasin à Toulouse</div>
+    <div class="con">⚠ Bon d'achat Boulanger uniquement (1 an)</div>
+    <div class="combined">→ Intéressant si achat iPhone chez Boulanger</div>
+  </div>
+  <div class="card">
+    <div class="rhead"><span class="rvendor">Fnac Reprise</span><span class="rprice">~250–310 €</span></div>
+    <div class="muted2">Via comparecycle partenaire Fnac. Virement sous 15 jours. Bonus possible si achat simultané.</div>
+    <div class="pro">✓ Flexible · se cumule avec achat Fnac</div>
+    <div class="con">⚠ Délai paiement 15 jours</div>
+    <div class="mt6"><a href="https://www.fnac.com/guides/common/reprise/default.aspx" target="_blank" style="font-size:11px">fnac.com reprise →</a></div>
+  </div>
+  <div class="card">
+    <div class="rhead"><span class="rvendor">Amazon Renew</span><span class="rprice">~220–290 €</span></div>
+    <div class="muted2">Via Recommerce. Crédit Amazon Gift Card. Estimation en ligne, envoi gratuit.</div>
+    <div class="pro">✓ Pratique si achat sur Amazon</div>
+    <div class="con">⚠ Crédit Amazon uniquement · moins élevé que spécialistes</div>
+  </div>
+</div>
+<div class="footnote">* Fourchettes pour un iPhone 15 Plus en bon état fonctionnel. Valeur finale selon diagnostic réel.</div>
+
+<!-- TABLEAU OPÉRATEURS -->
+<div class="st">📶 Achat avec forfait — coût total estimé sur 24 mois (après reprise ~300 €)</div>
+<div style="overflow-x:auto">
+<table>
+  <thead><tr>
+    <th>Opérateur</th><th>Forfait</th><th>Prix mobile</th><th>Après reprise</th><th>Forfait/mois</th><th>Total ~24 mois</th><th></th>
+  </tr></thead>
+  <tbody>
+    <tr class="cur">
+      <td><div class="tname">⚠️ Bouygues renouvellement</div><div class="tsub">Ton offre actuelle</div></td>
+      <td><div>250 Go 5G</div><div class="tsub">34,99 → 44,99 €/mois</div></td>
+      <td><div class="tprice">909 €</div><div class="tsub">+ 8 €/mois × 24</div></td>
+      <td>~609 € net<div class="treprise">Reprise Bouygues ~200–300 € + bonus 100 €</div></td>
+      <td>~40 €/mois moy.</td>
+      <td class="total-y">~2 070 €</td>
+      <td><span class="badge o">Actuel</span></td>
+    </tr>
+    <tr>
+      <td><div class="tname">SFR Illimité 5G+</div></td>
+      <td>Illimité 5G+</td>
+      <td><div class="tprice">859 €</div><div class="tsub">+ 8 €/mois × 24</div></td>
+      <td>~559 € net</td>
+      <td>39,99 €/mois</td>
+      <td class="total-r">~2 219 €</td>
+      <td><span class="badge r">Cher</span></td>
+    </tr>
+    <tr>
+      <td><div class="tname">Orange 200 Go</div></td>
+      <td>200 Go 5G</td>
+      <td><div class="tprice">949 €</div></td>
+      <td>~649 € net</td>
+      <td>37,99 €/mois</td>
+      <td class="total-r">~1 860 €</td>
+      <td><span class="badge r">Cher</span></td>
+    </tr>
+    <tr class="best">
+      <td><div class="tname">🥇 Red by SFR</div><div class="tsub">Sans engagement</div></td>
+      <td><div>150–250 Go 5G</div><div class="tsub">Réseau SFR</div></td>
+      <td><div class="tprice">1 379 €</div><div class="tsub">après ODR 100 €</div></td>
+      <td>~954 € net<div class="treprise">Reprise CompaRecycle ~425 €</div></td>
+      <td>11,99–12,99 €/mois</td>
+      <td class="total-g">~1 242–1 266 €</td>
+      <td><span class="badge g">Meilleur rapport</span></td>
+    </tr>
+    <tr class="best">
+      <td><div class="tname">🥈 Nu + Sosh 150 Go</div><div class="tsub">Sans engagement</div></td>
+      <td><div>150 Go 5G</div><div class="tsub">Réseau Orange</div></td>
+      <td><div class="tprice" id="tBestNu">1 171 €</div><div class="tsub">meilleur prix marché</div></td>
+      <td><span id="tBestNet">~746 € net</span><div class="treprise">Reprise CompaRecycle ~425 €</div></td>
+      <td>13,99 €/mois</td>
+      <td class="total-g" id="tBestTotal">~1 082 €</td>
+      <td><span class="badge g">Très bon</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="footnote">* Estimations indicatives. Reprise estimée à 300 € opérateurs, jusqu'à 425 € spécialistes. Valeur selon état réel du 15 Plus.</div>
+
+<!-- TÉLÉPHONE NU -->
+<div class="st">📦 Téléphone seul — prix nets après reprise 15 Plus</div>
+<div class="g2" id="nuGrid"></div>
+
+<!-- FORFAITS -->
+<div class="st">📡 Si achat nu — alternatives forfait (vs tes 38 €/mois Bouygues)</div>
+<div class="g3">
+  <div class="card orange">
+    <div class="fname">⚠️ Bouygues actuel</div>
+    <div class="fprice" style="color:var(--yellow)">38 €/mois</div>
+    <div class="fdetail">250 Go · 5G · ton abonnement actuel</div>
+    <div class="fsaving" style="color:var(--red)">→ ~912 € / 24 mois · référence à battre</div>
+  </div>
+  <div class="card purple">
+    <div class="fname">🥇 Red by SFR — 250 Go 5G</div>
+    <div class="fprice" style="color:#818cf8">12,99 €/mois</div>
+    <div class="fdetail">250 Go · 5G · sans engagement · 38 Go UE/DOM · appels illimités</div>
+    <div class="fsaving" style="color:var(--green)">→ 311 € / 24 mois · économie ~600 €</div>
+  </div>
+  <div class="card">
+    <div class="fname">B&amp;You (Bouygues) 200 Go</div>
+    <div class="fprice">16,99 €/mois</div>
+    <div class="fdetail">200 Go · 5G · même réseau Bouygues · sans engagement · 50 Go UE/DOM</div>
+    <div class="fsaving" style="color:var(--green)">→ 407 € / 24 mois · économie ~500 €</div>
+  </div>
+  <div class="card">
+    <div class="fname">Lebara (réseau SFR)</div>
+    <div class="fprice">8,99 €/mois</div>
+    <div class="fdetail">250 Go · 5G · sans engagement · SIM gratuite</div>
+    <div class="fsaving" style="color:var(--green)">→ 215 € / 24 mois · économie ~700 €</div>
+  </div>
+  <div class="card">
+    <div class="fname">Sosh (Orange) 150 Go</div>
+    <div class="fprice">13,99 €/mois</div>
+    <div class="fdetail">150 Go · 5G · réseau Orange · sans engagement · bonne couverture Toulouse</div>
+    <div class="fsaving" style="color:var(--green)">→ 335 € / 24 mois · économie ~575 €</div>
+  </div>
+  <div class="card">
+    <div class="fname">NRJ Mobile (Bouygues)</div>
+    <div class="fprice">7,49 €/mois</div>
+    <div class="fdetail">120 Go · 5G · réseau Bouygues · SIM 1 € · si 120 Go te suffisent</div>
+    <div class="fsaving" style="color:var(--green)">→ 180 € / 24 mois · économie ~730 €</div>
+  </div>
+</div>
+
+<!-- VERDICT -->
+<div class="st">🏆 Verdict — meilleurs scénarios (reprise incluse)</div>
+<div class="card blue">
+  <div style="font-weight:800;font-size:15px;margin-bottom:12px;color:#93c5fd">Top 3 des montages financiers</div>
+  <div class="vrow"><span class="vicon">🟢</span><div><strong>Scénario optimal :</strong> Acheter nu aux soldes (cible &lt;1 250 €) + reprise 15 Plus via CompaRecycle (~425 €) + Red by SFR 12,99 €/mois. Coût net estimé : ~825 € téléphone + 311 € forfait = <strong>~1 136 € sur 24 mois</strong>. Économie ≈ 935 € vs renouvellement Bouygues.</div></div>
+  <div class="vrow"><span class="vicon">🟡</span><div><strong>Scénario simple :</strong> Red by SFR tout-en-un (1 379 € ODR + 11,99 €/mois) + reprise CompaRecycle indépendante (~425 €). Net : ~954 € mobile + 287 € forfait = <strong>~1 241 € sur 24 mois</strong>. Sans engagement, zéro prise de tête.</div></div>
+  <div class="vrow"><span class="vicon">🔵</span><div><strong>Scénario réseau Bouygues :</strong> Acheter nu (~1 250 €) + reprise Boulanger carte cadeau (~300 €) + B&amp;You 200 Go 16,99 €/mois. Net : ~950 € + 407 € = <strong>~1 357 € sur 24 mois</strong>. Même réseau, liberté totale.</div></div>
+  <div class="vrow"><span class="vicon">🔴</span><div><strong>À éviter :</strong> Le renouvellement Bouygues actuel reste le plus onéreux de tous les scénarios, même avec son bonus reprise.</div></div>
+</div>
+
+<!-- FIL NEWS -->
+<div class="st">🗞 Fil des nouveautés &amp; mouvements de prix</div>
+<div id="newsContainer" style="display:flex;flex-direction:column;gap:8px"></div>
+
+<!-- ALERTE SOLDES -->
+<div class="card gold" style="margin-top:16px;font-size:12px;color:var(--gold);line-height:1.7">
+  <strong style="display:block;margin-bottom:5px;font-size:13px">🗓 À surveiller dès le 24 juin (ouverture des soldes)</strong>
+  · Amazon, Fnac, Boulanger et Darty font généralement des offres de lancement le jour J — surveiller dès le matin.<br>
+  · Le 256 Go est le format le plus bradé. Le 512 Go bleu intense part de 1 405 € avec moins de remises.<br>
+  · Fnac donne -5 % supplémentaires aux adhérents Fnac+ cumulables avec les remises soldes.<br>
+  · Rakuten propose du cashback Club R sur les iPhone — vérifier les taux au moment de l'achat.<br>
+  · <strong>Astuce reprise :</strong> Obtenir l'estimation CompaRecycle avant les soldes (valable ~30 jours) et envoyer le 15 Plus dès réception du 17 Pro Max.
+</div>
+
+<script>
+// ── Données initiales ──────────────────────────────────────────────────────
+const SEED = {
+  lastUpdate: "2026-06-22",
+  prices: {
+    amazon:    [{ price: 1309, date: "22/06" }],
+    fnac:      [{ price: 1379, date: "22/06" }],
+    cdiscount: [{ price: 1353, date: "22/06" }],
+    idealo:    [{ price: 1171, date: "22/06" }],
+  },
+  news: [
+    { date: "22 juin", text: "🚀 <b>Lancement de la veille.</b> Soldes J-2. Prix établis : Idealo 1 171 €, Amazon 1 309 €, Fnac ~1 379 €, CDiscount 1 353 €." },
+    { date: "22 juin", text: "📊 <b>CompaRecycle</b> estime l'iPhone 15 Plus jusqu'à 425 € en bon état — meilleure reprise identifiée (virement sans obligation d'achat)." },
+    { date: "22 juin", text: "📉 <b>Amazon</b> avait proposé le 256 Go à 1 309 € le 17 juin (-165 €). À re-surveiller dès l'ouverture des soldes." },
+  ],
+};
+
+const VENDORS = ["amazon", "fnac", "cdiscount", "idealo"];
+const VLABELS = { amazon: "Amazon", fnac: "Fnac", cdiscount: "CDiscount", idealo: "Idealo" };
+const KEY = "virage_iphone_v3";
+
+function load() { try { const r = localStorage.getItem(KEY); return r ? JSON.parse(r) : null; } catch { return null; } }
+function save(d) { try { localStorage.setItem(KEY, JSON.stringify(d)); } catch {} }
+function fmt(n) { return n.toLocaleString("fr-FR") + " €"; }
+function getApiKey() { return localStorage.getItem("virage_apikey") || ""; }
+
+function saveApiKey() {
+  const k = document.getElementById("apikeyInput").value.trim();
+  if (!k) return alert("Clé vide.");
+  localStorage.setItem("virage_apikey", k);
+  document.getElementById("apikeyBox").style.display = "none";
+  alert("Clé enregistrée ✓");
+}
+
+// ── Init ───────────────────────────────────────────────────────────────────
+let history = load() || SEED;
+if (!load()) save(history);
+
+// Masquer la box API key si déjà enregistrée
+if (getApiKey()) document.getElementById("apikeyBox").style.display = "none";
+else document.getElementById("apikeyInput").value = getApiKey();
+
+render();
+document.getElementById("statusLabel").textContent = "Dernière mise à jour : " + history.lastUpdate;
+
+// ── RENDER ─────────────────────────────────────────────────────────────────
+function render() {
+  const prices = history.prices;
+
+  // Best price
+  const vals = VENDORS.map(v => prices[v]?.slice(-1)[0]?.price || 0).filter(p => p > 0);
+  const best = Math.min(...vals);
+  const bestV = VENDORS.find(v => (prices[v]?.slice(-1)[0]?.price || 0) === best);
+  const prev = VENDORS.map(v => prices[v]?.slice(-2, -1)[0]?.price || 0);
+  const bestPrev = Math.min(...prev.filter(p => p > 0));
+
+  document.getElementById("refBest").textContent = fmt(best);
+  document.getElementById("refBestSource").textContent = VLABELS[bestV] || "—";
+  setDelta("refBestDelta", best, bestPrev);
+
+  const amzLast = prices.amazon?.slice(-1)[0]?.price || 0;
+  const amzPrev = prices.amazon?.slice(-2, -1)[0]?.price || 0;
+  document.getElementById("refAmz").textContent = amzLast ? fmt(amzLast) : "—";
+  setDelta("refAmzDelta", amzLast, amzPrev);
+
+  // Tableau best nu
+  document.getElementById("tBestNu").textContent = fmt(best);
+  document.getElementById("tBestNet").textContent = "~" + fmt(best - 425) + " net";
+  document.getElementById("tBestTotal").textContent = "~" + fmt(Math.round(best - 425 + 13.99 * 24));
+
+  // Historique
+  const hg = document.getElementById("histGrid");
+  hg.innerHTML = "";
+  VENDORS.forEach(v => {
+    const entries = [...(prices[v] || [])].slice(-5).reverse();
+    let rows = entries.map((e, i) => {
+      const p = entries[i + 1];
+      let arr = "", ac = "#888";
+      if (p) { if (e.price < p.price) { arr = "↓"; ac = "#4ade80"; } else if (e.price > p.price) { arr = "↑"; ac = "#f87171"; } else { arr = "→"; } }
+      return `<div class="hrow"><span class="hdate">${e.date}</span>${arr ? `<span class="harr" style="color:${ac}">${arr}</span>` : ""}<span class="hprice">${fmt(e.price)}</span></div>`;
+    }).join("");
+    hg.innerHTML += `<div class="hcard"><div class="hcard-title">${VLABELS[v]}</div>${rows}</div>`;
+  });
+
+  // Nu cards
+  const nuDefs = [
+    { vendor: "🥇 Idealo marketplace", key: "idealo", detail: "Bleu intense 256 Go · vendeur BLUESKY-EU · livraison ~27 juin · code promo dispo", pro: "✓ Prix marché le plus bas", con: "⚠ Vendeur peu noté (1,7/5) — vérifier · pas de reprise directe", reprise: 425, repriseLabel: "CompaRecycle", green: true },
+    { vendor: "Amazon France", key: "amazon", detail: "256 Go · offre repérée le 17 juin · Prime rapide · reprise Amazon Renew possible", pro: "✓ Fiable, retours 30 jours", con: "⚠ Reprise Amazon (~220–290 €) < CompaRecycle — faire reprise séparément", reprise: 425, repriseLabel: "CompaRecycle", green: false },
+    { vendor: "CDiscount", key: "cdiscount", detail: "256 Go · vérifier dispo bleu intense · pas de reprise directe", pro: "✓ Vendeur agréé connu", con: "⚠ Faire reprise séparément via CompaRecycle", reprise: 425, repriseLabel: "CompaRecycle", green: false },
+    { vendor: "Fnac (adhérent Fnac+)", key: "fnac", detail: "Bleu intense 256 Go · -5% adhérent · livraison 1j · reprise Fnac possible en magasin", pro: "✓ SAV fiable · combo achat + reprise magasin Toulouse", con: "⚠ Reprise Fnac (~250–310 €) en carte cadeau seulement", reprise: 300, repriseLabel: "Fnac (carte cadeau)", green: false },
+  ];
+  const ng = document.getElementById("nuGrid");
+  ng.innerHTML = "";
+  nuDefs.forEach(c => {
+    const rawP = prices[c.key]?.slice(-1)[0]?.price || 0;
+    const net = rawP > 0 ? rawP - c.reprise : null;
+    const netColor = net !== null && net < 1000 ? "#4ade80" : "#fbbf24";
+    ng.innerHTML += `
+      <div class="card${c.green ? " green" : ""}">
+        <div class="nhead">
+          <span class="nvendor">${c.vendor}</span>
+          <span class="nprice" style="color:${c.green ? "#4ade80" : "#fff"}">${rawP ? fmt(rawP) : "—"}</span>
+        </div>
+        <div class="muted2">${c.detail}</div>
+        <div class="pro">${c.pro}</div>
+        <div class="con">${c.con}</div>
+        ${net !== null ? `<div class="nnet">💰 Net après reprise ${c.repriseLabel} ${fmt(c.reprise)} : <span style="color:${netColor}">${fmt(net)}</span></div>` : ""}
+      </div>`;
+  });
+
+  // News
+  const nc = document.getElementById("newsContainer");
+  nc.innerHTML = [...history.news].reverse().slice(0, 12).map((n, i) =>
+    `<div class="news-item${i === 0 ? " new-item" : ""}">
+      <span class="ndate">${n.date}</span>
+      <span class="ntext">${n.text}</span>
+    </div>`
+  ).join("");
+}
+
+function setDelta(id, curr, prev) {
+  const el = document.getElementById(id);
+  if (!el || !prev || prev === curr) { if (el) { el.textContent = ""; } return; }
+  const diff = curr - prev;
+  el.textContent = (diff > 0 ? "▲ +" : "▼ ") + Math.abs(diff) + " € vs veille";
+  el.className = "cdelta " + (diff > 0 ? "up" : "down");
+}
+
+// ── UPDATE ─────────────────────────────────────────────────────────────────
+async function runUpdate() {
+  const apiKey = getApiKey();
+  if (!apiKey) {
+    document.getElementById("apikeyBox").style.display = "flex";
+    document.getElementById("apikeyBox").style.flexDirection = "column";
+    alert("Entre d'abord ta clé API Anthropic ci-dessus ↑");
+    return;
+  }
+
+  const btn = document.getElementById("updateBtn");
+  btn.disabled = true; btn.textContent = "⏳ Recherche en cours…";
+  document.getElementById("statusLabel").textContent = "Recherche des prix…";
+
+  const d = new Date();
+  const short = d.toLocaleDateString("fr-FR", { day: "2-digit", month: "2-digit" });
+  const long  = d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
+  const iso   = d.toISOString().slice(0, 10);
+
+  const prompt = `Tu es un assistant de veille prix pour l'iPhone 17 Pro Max 256 Go bleu intense en France.
+Date du jour : ${long} 2026.
+
+Recherche les prix actuels et réponds UNIQUEMENT avec un objet JSON valide, sans backticks ni texte avant/après :
+{"amazon":ENTIER,"fnac":ENTIER,"cdiscount":ENTIER,"idealo":ENTIER,"news":"phrase max 160 chars commençant par un emoji décrivant la principale nouveauté du jour (baisse de prix, nouvelle offre, info soldes...)"}
+
+Sources :
+- amazon : prix sur amazon.fr pour iPhone 17 Pro Max 256 Go bleu intense (vendeur Amazon ou Fulfilled by Amazon)
+- fnac : prix sur fnac.com sans remise adhérent
+- cdiscount : prix sur cdiscount.com
+- idealo : prix minimum sur idealo.fr pour iPhone 17 Pro Max 256 Go (bleu intense ou toutes couleurs si indispo)
+
+Si un prix est introuvable, mets 0.`;
+
+  try {
+    const resp = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": apiKey,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true",
+      },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1000,
+        tools: [{ type: "web_search_20250305", name: "web_search" }],
+        messages: [{ role: "user", content: prompt }],
+      }),
+    });
+
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.error?.message || resp.statusText);
+    }
+
+    const data = await resp.json();
+    const raw = (data.content || []).filter(b => b.type === "text").map(b => b.text).join("");
+    const m = raw.match(/\{[\s\S]*?\}/);
+    let parsed = null;
+    if (m) { try { parsed = JSON.parse(m[0]); } catch {} }
+
+    if (parsed) {
+      VENDORS.forEach(v => {
+        if (!history.prices[v]) history.prices[v] = [];
+        const p = parseInt(parsed[v]);
+        if (p > 0) {
+          const last = history.prices[v].slice(-1)[0];
+          if (!last || last.date !== short) history.prices[v].push({ price: p, date: short });
+          else last.price = p;
+        }
+      });
+      history.news.push({ date: long, text: parsed.news || `🔄 Prix mis à jour le ${long}.` });
+    } else {
+      history.news.push({ date: long, text: `⚠️ Mise à jour partielle le ${long} — réponse inattendue. Vérifier manuellement sur Idealo et Amazon.` });
+    }
+
+    history.lastUpdate = iso;
+    save(history);
+    render();
+    document.getElementById("statusLabel").textContent = "Dernière mise à jour : " + iso;
+
+  } catch (err) {
+    document.getElementById("statusLabel").textContent = "Erreur : " + err.message;
+    alert("Erreur lors de la mise à jour :\n" + err.message);
+  }
+
+  btn.disabled = false; btn.textContent = "🔄 Mettre à jour aujourd'hui";
+}
+</script>
+</body>
+</html>
