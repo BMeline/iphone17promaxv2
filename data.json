@@ -1,28 +1,44 @@
 {
-  "lastUpdate": "2026-06-22",
+  "lastUpdate": "2026-06-23",
   "prices": {
     "amazon": [
       {
         "price": 1309,
         "date": "22/06"
+      },
+      {
+        "price": 1310,
+        "date": "23/06"
       }
     ],
     "fnac": [
       {
         "price": 1479,
         "date": "22/06"
+      },
+      {
+        "price": 1479,
+        "date": "23/06"
       }
     ],
     "cdiscount": [
       {
         "price": 1353,
         "date": "22/06"
+      },
+      {
+        "price": 1454,
+        "date": "23/06"
       }
     ],
     "idealo": [
       {
         "price": 1179,
         "date": "22/06"
+      },
+      {
+        "price": 1278,
+        "date": "23/06"
       }
     ]
   },
@@ -42,6 +58,10 @@
     {
       "date": "22 juin 2026",
       "text": "📉 Amazon : iPhone 17 Pro Max 256 Go à 1 309 € (-170 €). Idealo dès 1 179 € via Rakuten. Soldes d'été 2026 en approche."
+    },
+    {
+      "date": "23 juin 2026",
+      "text": "🔥 Amazon Prime Day : iPhone 17 Pro Max 256 Go à 1 310 € — prix record chez Amazon, -169 € sur le tarif officiel !"
     }
   ]
 }
