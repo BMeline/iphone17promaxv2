@@ -20,34 +20,24 @@
   h1{font-size:20px;font-weight:800;color:#fff}
   a{color:#818cf8;text-decoration:none} a:hover{text-decoration:underline}
 
-  /* STATUS */
   .statusbar{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:9px 14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:8px}
   .live{display:flex;align-items:center;gap:7px;color:var(--green);font-weight:700;font-size:12px}
   .dot{width:8px;height:8px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
   #statusLabel{font-size:12px;color:var(--muted2)}
 
-  /* BUTTON */
   .btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:13px;font-weight:700;cursor:pointer;transition:background .2s}
-  .btn:hover{background:#4f46e5} .btn:disabled{background:#333;color:#555;cursor:default}
+  .btn:hover{background:#4f46e5}
 
-  /* API KEY */
-  .apibox{background:var(--gold-bg);border:1px solid var(--gold-b);border-radius:10px;padding:14px;margin-bottom:18px;display:flex;flex-direction:column;gap:8px}
-  .apibox label{font-size:12px;color:var(--gold);font-weight:700}
-  .apibox input{background:#111;border:1px solid #444;border-radius:6px;color:#fff;padding:7px 10px;font-size:12px;font-family:monospace;width:100%}
-  .apibox .hint{font-size:11px;color:#a16207}
-
-  /* SECTION TITLES */
   .st{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:24px 0 10px;border-bottom:1px solid #222;padding-bottom:5px}
+  .st-sub{font-size:11px;color:var(--muted2);font-weight:400;text-transform:none;letter-spacing:0;margin-left:6px}
 
-  /* GRIDS */
   .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
   .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
   .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   @media(max-width:700px){.g4,.g3{grid-template-columns:repeat(2,1fr)}.g2{grid-template-columns:1fr}}
   @media(max-width:420px){.g4,.g3,.g2{grid-template-columns:1fr}}
 
-  /* CARDS */
   .card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:13px}
   .card.hi{background:var(--purple-bg);border-color:var(--purple-b)}
   .card.green{background:var(--green-bg);border-color:var(--green)}
@@ -63,14 +53,12 @@
   .cdelta{font-size:11px;font-weight:700;text-align:center;margin-top:3px}
   .cdelta.up{color:var(--red)} .cdelta.down{color:var(--green)} .cdelta.same{color:var(--muted2)}
 
-  /* BADGE / TAG */
   .badge{display:inline-block;border-radius:20px;padding:2px 9px;font-size:11px;font-weight:700}
   .badge.g{background:#16a34a;color:#fff} .badge.o{background:#ea580c;color:#fff}
   .badge.r{background:#dc2626;color:#fff} .badge.gr{background:#444;color:#ccc}
   .tag{display:inline-block;border-radius:4px;padding:2px 8px;font-size:11px;font-weight:600;margin-left:5px}
   .tag.b{background:#1e3a5f;color:#7dd3fc} .tag.g{background:#14532d;color:#86efac} .tag.o{background:#431407;color:#fdba74}
 
-  /* HISTORY */
   .hcard{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px}
   .hcard-title{font-size:11px;color:var(--muted2);font-weight:600;margin-bottom:7px}
   .hrow{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid #1e1e28;font-size:12px}
@@ -78,15 +66,13 @@
   .hdate{color:var(--muted)} .hprice{font-weight:700}
   .harr{font-size:10px;margin:0 3px}
 
-  /* REPRISE */
-  .rhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .rhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;flex-wrap:wrap;gap:4px}
   .rvendor{font-weight:700;font-size:13px}
-  .rprice{font-size:17px;font-weight:800}
+  .rprice{font-size:16px;font-weight:800}
   .pro{font-size:12px;color:#86efac;margin-top:5px}
   .con{font-size:12px;color:var(--red)}
   .combined{font-size:12px;font-weight:700;color:var(--yellow);margin-top:6px}
 
-  /* TABLE */
   table{width:100%;border-collapse:collapse;font-size:13px}
   th{background:var(--bg3);color:var(--muted2);font-weight:600;padding:8px 10px;text-align:left;border-bottom:1px solid var(--border);font-size:12px}
   td{padding:9px 10px;border-bottom:1px solid #1e1e28;vertical-align:top}
@@ -99,23 +85,20 @@
   .total-r{color:var(--red);font-weight:700}
   .treprise{font-size:11px;color:#86efac;margin-top:3px}
 
-  /* NU CARDS */
   .nhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
   .nvendor{font-weight:700;font-size:14px}
   .nprice{font-size:18px;font-weight:800}
   .nnet{font-size:12px;font-weight:700;color:var(--yellow);margin-top:7px;border-top:1px solid #2a2a35;padding-top:6px}
 
-  /* FORFAITS */
   .fname{font-weight:700;font-size:13px;margin-bottom:4px}
   .fprice{font-size:20px;font-weight:800}
   .fdetail{font-size:11px;color:var(--muted2);margin-top:4px}
   .fsaving{font-size:12px;font-weight:600;margin-top:6px}
+  .fupdate{font-size:10px;color:var(--muted);margin-top:4px}
 
-  /* VERDICT */
   .vrow{display:flex;gap:10px;margin-bottom:10px;font-size:13px;line-height:1.6}
   .vicon{flex-shrink:0}
 
-  /* NEWS */
   .news-item{display:flex;gap:10px;align-items:flex-start;padding:11px 13px;background:var(--bg2);border:1px solid var(--border);border-radius:8px}
   .ndate{font-size:11px;color:var(--muted2);white-space:nowrap;flex-shrink:0;margin-top:1px}
   .ntext{font-size:13px;line-height:1.5}
@@ -126,6 +109,7 @@
   .header-meta{font-size:12px;color:var(--muted2);margin-top:4px}
   .mb4{margin-bottom:4px} .mt4{margin-top:4px} .mt6{margin-top:6px} .mt8{margin-top:8px}
   .fw7{font-weight:700} .fs12{font-size:12px}
+  .update-chip{display:inline-block;background:#1e1e28;border:1px solid #2a2a35;border-radius:20px;padding:2px 8px;font-size:10px;color:var(--muted2);margin-left:8px;vertical-align:middle}
 </style>
 </head>
 <body>
@@ -162,67 +146,28 @@
   </div>
   <div class="card hi" style="text-align:center">
     <div class="clabel">Meilleur prix nu (256 Go)</div>
-    <div class="cbig" id="refBest" style="color:#818cf8">1 171 €</div>
-    <div class="cdelta" id="refBestDelta">—</div>
+    <div class="cbig" id="refBest" style="color:#818cf8">—</div>
+    <div class="cdelta" id="refBestDelta"></div>
     <div class="cnote" id="refBestSource">Idealo marketplace</div>
   </div>
   <div class="card hi" style="text-align:center">
     <div class="clabel">Amazon actuel (256 Go)</div>
-    <div class="cbig" id="refAmz" style="color:#818cf8">1 309 €</div>
-    <div class="cdelta" id="refAmzDelta">—</div>
+    <div class="cbig" id="refAmz" style="color:#818cf8">—</div>
+    <div class="cdelta" id="refAmzDelta"></div>
     <div class="cnote">Mis à jour à chaque veille</div>
   </div>
 </div>
 
 <!-- HISTORIQUE -->
-<div class="st">📈 Historique des prix observés (256 Go bleu intense)</div>
+<div class="st">📈 Historique des prix observés (256 Go)</div>
 <div class="g4" id="histGrid"></div>
 
-<!-- REPRISE -->
-<div class="st">♻️ Reprise iPhone 15 Plus — valeur & conditions par enseigne</div>
-<div class="g3">
-  <div class="card green">
-    <div class="rhead"><span class="rvendor">🥇 CompaRecycle</span><span class="rprice" style="color:var(--green)">jusqu'à 425 €</span></div>
-    <div class="muted2">Compare 50+ repreneurs. Virement bancaire direct, sans obligation d'achat. Meilleur taux constaté pour un 15 Plus en bon état.</div>
-    <div class="pro">✓ Prix le plus élevé · liberté totale · pas d'engagement</div>
-    <div class="combined">→ Combiner avec n'importe quel achat séparé</div>
-    <div class="mt6"><a href="https://comparecycle.com/revendre-smartphone/iphone" target="_blank" style="font-size:11px">comparecycle.com →</a></div>
-  </div>
-  <div class="card">
-    <div class="rhead"><span class="rvendor">Apple Trade In</span><span class="rprice">~290–320 €</span></div>
-    <div class="muted2">Crédit déductible uniquement sur achat Apple Store. Simple et immédiat. Taux US ≈ 320 $ (mars 2026).</div>
-    <div class="pro">✓ Immédiat, fiable</div>
-    <div class="con">⚠ Crédit Apple uniquement, pas de virement</div>
-    <div class="mt6"><a href="https://www.apple.com/fr/shop/buy-iphone/iphone-17-pro" target="_blank" style="font-size:11px">apple.com/fr →</a></div>
-  </div>
-  <div class="card">
-    <div class="rhead"><span class="rvendor">Bouygues (Recommerce)</span><span class="rprice">~200–300 € + 100 € bonus</span></div>
-    <div class="muted2">Bonus 100 € si souscription forfait 100 Go+ avec engagement 24 mois. Valeur reprise seule < spécialistes.</div>
-    <div class="pro">✓ Bonus intéressant couplé forfait</div>
-    <div class="con">⚠ Engagement 24 mois obligatoire pour le bonus</div>
-  </div>
-  <div class="card">
-    <div class="rhead"><span class="rvendor">Boulanger</span><span class="rprice">~250–320 €</span></div>
-    <div class="muted2">Estimation en ligne, dépôt en magasin ou point relais Chronopost. Carte cadeau immédiate si dépôt en magasin.</div>
-    <div class="pro">✓ Rapide en magasin à Toulouse</div>
-    <div class="con">⚠ Bon d'achat Boulanger uniquement (1 an)</div>
-    <div class="combined">→ Intéressant si achat iPhone chez Boulanger</div>
-  </div>
-  <div class="card">
-    <div class="rhead"><span class="rvendor">Fnac Reprise</span><span class="rprice">~250–310 €</span></div>
-    <div class="muted2">Via comparecycle partenaire Fnac. Virement sous 15 jours. Bonus possible si achat simultané.</div>
-    <div class="pro">✓ Flexible · se cumule avec achat Fnac</div>
-    <div class="con">⚠ Délai paiement 15 jours</div>
-    <div class="mt6"><a href="https://www.fnac.com/guides/common/reprise/default.aspx" target="_blank" style="font-size:11px">fnac.com reprise →</a></div>
-  </div>
-  <div class="card">
-    <div class="rhead"><span class="rvendor">Amazon Renew</span><span class="rprice">~220–290 €</span></div>
-    <div class="muted2">Via Recommerce. Crédit Amazon Gift Card. Estimation en ligne, envoi gratuit.</div>
-    <div class="pro">✓ Pratique si achat sur Amazon</div>
-    <div class="con">⚠ Crédit Amazon uniquement · moins élevé que spécialistes</div>
-  </div>
+<!-- REPRISE - DYNAMIQUE -->
+<div class="st">♻️ Reprise iPhone 15 Plus — valeur &amp; conditions par enseigne
+  <span class="update-chip" id="repriseUpdateChip">veille quotidienne</span>
 </div>
-<div class="footnote">* Fourchettes pour un iPhone 15 Plus en bon état fonctionnel. Valeur finale selon diagnostic réel.</div>
+<div id="repriseGrid" class="g3"></div>
+<div class="footnote">* Fourchettes pour un iPhone 15 Plus en bon état fonctionnel. Valeur finale selon diagnostic réel. CompaRecycle mis à jour quotidiennement par la veille.</div>
 
 <!-- TABLEAU OPÉRATEURS -->
 <div class="st">📶 Achat avec forfait — coût total estimé sur 24 mois (après reprise ~300 €)</div>
@@ -263,79 +208,38 @@
       <td><div class="tname">🥇 Red by SFR</div><div class="tsub">Sans engagement</div></td>
       <td><div>150–250 Go 5G</div><div class="tsub">Réseau SFR</div></td>
       <td><div class="tprice">1 379 €</div><div class="tsub">après ODR 100 €</div></td>
-      <td>~954 € net<div class="treprise">Reprise CompaRecycle ~425 €</div></td>
-      <td>11,99–12,99 €/mois</td>
-      <td class="total-g">~1 242–1 266 €</td>
+      <td id="tRedNet">~954 € net<div class="treprise">Reprise CompaRecycle ~<span id="tRedReprise">425</span> €</div></td>
+      <td id="tRedForfait">11,99–12,99 €/mois</td>
+      <td class="total-g" id="tRedTotal">~1 242–1 266 €</td>
       <td><span class="badge g">Meilleur rapport</span></td>
     </tr>
     <tr class="best">
       <td><div class="tname">🥈 Nu + Sosh 150 Go</div><div class="tsub">Sans engagement</div></td>
       <td><div>150 Go 5G</div><div class="tsub">Réseau Orange</div></td>
-      <td><div class="tprice" id="tBestNu">1 171 €</div><div class="tsub">meilleur prix marché</div></td>
-      <td><span id="tBestNet">~746 € net</span><div class="treprise">Reprise CompaRecycle ~425 €</div></td>
-      <td>13,99 €/mois</td>
-      <td class="total-g" id="tBestTotal">~1 082 €</td>
+      <td><div class="tprice" id="tBestNu">—</div><div class="tsub">meilleur prix marché</div></td>
+      <td><span id="tBestNet">—</span><div class="treprise">Reprise CompaRecycle ~<span id="tBestReprise">425</span> €</div></td>
+      <td id="tSoshForfait">13,99 €/mois</td>
+      <td class="total-g" id="tBestTotal">—</td>
       <td><span class="badge g">Très bon</span></td>
     </tr>
   </tbody>
 </table>
 </div>
-<div class="footnote">* Estimations indicatives. Reprise estimée à 300 € opérateurs, jusqu'à 425 € spécialistes. Valeur selon état réel du 15 Plus.</div>
+<div class="footnote">* Estimations indicatives. Reprise estimée à 300 € opérateurs, jusqu'à <span id="footerReprise">425</span> € spécialistes. Valeur selon état réel du 15 Plus.</div>
 
 <!-- TÉLÉPHONE NU -->
 <div class="st">📦 Téléphone seul — prix nets après reprise 15 Plus</div>
 <div class="g2" id="nuGrid"></div>
 
-<!-- FORFAITS -->
-<div class="st">📡 Si achat nu — alternatives forfait (vs tes 38 €/mois Bouygues)</div>
-<div class="g3">
-  <div class="card orange">
-    <div class="fname">⚠️ Bouygues actuel</div>
-    <div class="fprice" style="color:var(--yellow)">38 €/mois</div>
-    <div class="fdetail">250 Go · 5G · ton abonnement actuel</div>
-    <div class="fsaving" style="color:var(--red)">→ ~912 € / 24 mois · référence à battre</div>
-  </div>
-  <div class="card purple">
-    <div class="fname">🥇 Red by SFR — 250 Go 5G</div>
-    <div class="fprice" style="color:#818cf8">12,99 €/mois</div>
-    <div class="fdetail">250 Go · 5G · sans engagement · 38 Go UE/DOM · appels illimités</div>
-    <div class="fsaving" style="color:var(--green)">→ 311 € / 24 mois · économie ~600 €</div>
-  </div>
-  <div class="card">
-    <div class="fname">B&amp;You (Bouygues) 200 Go</div>
-    <div class="fprice">16,99 €/mois</div>
-    <div class="fdetail">200 Go · 5G · même réseau Bouygues · sans engagement · 50 Go UE/DOM</div>
-    <div class="fsaving" style="color:var(--green)">→ 407 € / 24 mois · économie ~500 €</div>
-  </div>
-  <div class="card">
-    <div class="fname">Lebara (réseau SFR)</div>
-    <div class="fprice">8,99 €/mois</div>
-    <div class="fdetail">250 Go · 5G · sans engagement · SIM gratuite</div>
-    <div class="fsaving" style="color:var(--green)">→ 215 € / 24 mois · économie ~700 €</div>
-  </div>
-  <div class="card">
-    <div class="fname">Sosh (Orange) 150 Go</div>
-    <div class="fprice">13,99 €/mois</div>
-    <div class="fdetail">150 Go · 5G · réseau Orange · sans engagement · bonne couverture Toulouse</div>
-    <div class="fsaving" style="color:var(--green)">→ 335 € / 24 mois · économie ~575 €</div>
-  </div>
-  <div class="card">
-    <div class="fname">NRJ Mobile (Bouygues)</div>
-    <div class="fprice">7,49 €/mois</div>
-    <div class="fdetail">120 Go · 5G · réseau Bouygues · SIM 1 € · si 120 Go te suffisent</div>
-    <div class="fsaving" style="color:var(--green)">→ 180 € / 24 mois · économie ~730 €</div>
-  </div>
+<!-- FORFAITS - DYNAMIQUE -->
+<div class="st">📡 Si achat nu — alternatives forfait (vs <span id="refForfaitPrice">38</span> €/mois Bouygues)
+  <span class="update-chip" id="forfaitsUpdateChip">veille quotidienne</span>
 </div>
+<div id="forfaitsGrid" class="g3"></div>
 
-<!-- VERDICT -->
+<!-- VERDICT - DYNAMIQUE -->
 <div class="st">🏆 Verdict — meilleurs scénarios (reprise incluse)</div>
-<div class="card blue">
-  <div style="font-weight:800;font-size:15px;margin-bottom:12px;color:#93c5fd">Top 3 des montages financiers</div>
-  <div class="vrow"><span class="vicon">🟢</span><div><strong>Scénario optimal :</strong> Acheter nu aux soldes (cible &lt;1 250 €) + reprise 15 Plus via CompaRecycle (~425 €) + Red by SFR 12,99 €/mois. Coût net estimé : ~825 € téléphone + 311 € forfait = <strong>~1 136 € sur 24 mois</strong>. Économie ≈ 935 € vs renouvellement Bouygues.</div></div>
-  <div class="vrow"><span class="vicon">🟡</span><div><strong>Scénario simple :</strong> Red by SFR tout-en-un (1 379 € ODR + 11,99 €/mois) + reprise CompaRecycle indépendante (~425 €). Net : ~954 € mobile + 287 € forfait = <strong>~1 241 € sur 24 mois</strong>. Sans engagement, zéro prise de tête.</div></div>
-  <div class="vrow"><span class="vicon">🔵</span><div><strong>Scénario réseau Bouygues :</strong> Acheter nu (~1 250 €) + reprise Boulanger carte cadeau (~300 €) + B&amp;You 200 Go 16,99 €/mois. Net : ~950 € + 407 € = <strong>~1 357 € sur 24 mois</strong>. Même réseau, liberté totale.</div></div>
-  <div class="vrow"><span class="vicon">🔴</span><div><strong>À éviter :</strong> Le renouvellement Bouygues actuel reste le plus onéreux de tous les scénarios, même avec son bonus reprise.</div></div>
-</div>
+<div id="verdictCard" class="card blue"></div>
 
 <!-- FIL NEWS -->
 <div class="st">🗞 Fil des nouveautés &amp; mouvements de prix</div>
@@ -343,96 +247,250 @@
 
 <!-- ALERTE SOLDES -->
 <div class="card gold" style="margin-top:16px;font-size:12px;color:var(--gold);line-height:1.7">
-  <strong style="display:block;margin-bottom:5px;font-size:13px">🗓 À surveiller dès le 24 juin (ouverture des soldes)</strong>
-  · Amazon, Fnac, Boulanger et Darty font généralement des offres de lancement le jour J — surveiller dès le matin.<br>
+  <strong style="display:block;margin-bottom:5px;font-size:13px">🗓 Rappels soldes d'été 2026</strong>
   · Le 256 Go est le format le plus bradé. Le 512 Go bleu intense part de 1 405 € avec moins de remises.<br>
   · Fnac donne -5 % supplémentaires aux adhérents Fnac+ cumulables avec les remises soldes.<br>
   · Rakuten propose du cashback Club R sur les iPhone — vérifier les taux au moment de l'achat.<br>
-  · <strong>Astuce reprise :</strong> Obtenir l'estimation CompaRecycle avant les soldes (valable ~30 jours) et envoyer le 15 Plus dès réception du 17 Pro Max.
+  · <strong>Astuce reprise :</strong> Obtenir l'estimation CompaRecycle avant l'achat (valable ~30 jours) et envoyer le 15 Plus dès réception du 17 Pro Max.
 </div>
 
 <script>
-// ── Données initiales (fallback si data.json inaccessible) ──────────────────
+// ── Seed (fallback si data.json inaccessible) ────────────────────────────────
 const SEED = {
-  lastUpdate: "2026-06-22",
+  lastUpdate: "2026-06-29",
   prices: {
-    amazon:    [{ price: 1309, date: "22/06" }],
-    fnac:      [{ price: 1379, date: "22/06" }],
-    cdiscount: [{ price: 1353, date: "22/06" }],
-    idealo:    [{ price: 1171, date: "22/06" }],
+    amazon:    [{price:1309,date:"29/06"}],
+    fnac:      [{price:1479,date:"29/06"}],
+    cdiscount: [{price:1469,date:"29/06"}],
+    idealo:    [{price:1179,date:"29/06"}]
+  },
+  reprise: {
+    comparecycle: {max:425},
+    apple:        {min:290, max:320},
+    bouygues:     {min:200, max:300, bonus:100},
+    boulanger:    {min:250, max:320},
+    fnac:         {min:250, max:310},
+    amazon:       {min:220, max:290}
+  },
+  forfaits: {
+    bouygues_actuel: {price:38,    data:"250 Go", label:"Bouygues actuel"},
+    red_sfr:         {price:12.99, data:"250 Go", label:"Red by SFR"},
+    byu:             {price:16.99, data:"200 Go", label:"B&You (Bouygues)"},
+    sosh:            {price:13.99, data:"150 Go", label:"Sosh (Orange)"},
+    lebara:          {price:8.99,  data:"250 Go", label:"Lebara"},
+    nrj:             {price:7.49,  data:"120 Go", label:"NRJ Mobile"}
   },
   news: [
-    { date: "22 juin", text: "🚀 <b>Lancement de la veille.</b> Soldes J-2. Prix : Idealo 1 171 €, Amazon 1 309 €, Fnac ~1 379 €, CDiscount 1 353 €." },
-    { date: "22 juin", text: "📊 <b>CompaRecycle</b> estime l’iPhone 15 Plus jusqu’à 425 € en bon état." },
-    { date: "22 juin", text: "📉 <b>Amazon</b> avait 1 309 € le 17 juin. À re-surveiller dès l’ouverture des soldes." },
-  ],
+    {date:"29 juin 2026", text:"🏷️ Soldes d'été : iPhone 17 Pro Max 256 Go à 1 179 € sur Idealo, meilleur prix du marché ! Amazon à 1 309 €."}
+  ]
 };
 
-const VENDORS = ["amazon", "fnac", "cdiscount", "idealo"];
-const VLABELS = { amazon: "Amazon", fnac: "Fnac", cdiscount: "CDiscount", idealo: "Idealo" };
-function fmt(n) { return n.toLocaleString("fr-FR") + " €"; }
+const VENDORS  = ["amazon","fnac","cdiscount","idealo"];
+const VLABELS  = {amazon:"Amazon",fnac:"Fnac",cdiscount:"CDiscount",idealo:"Idealo"};
 
-let history = SEED;
+function fmt(n) { return Math.round(n).toLocaleString("fr-FR") + " €"; }
+function fmtF(n){ return n.toFixed(2).replace(".",",") + " €"; }
+function fmtRange(min,max){ return "~" + min + "–" + max + " €"; }
 
-// ── Init : charge data.json poussé chaque matin par Cowork ──────────────────
+let D = JSON.parse(JSON.stringify(SEED));
+
+// ── Chargement ───────────────────────────────────────────────────────────────
 async function init() {
   try {
-    const resp = await fetch('./data.json?t=' + Date.now());
-    if (resp.ok) history = await resp.json();
+    const r = await fetch("./data.json?t=" + Date.now());
+    if (r.ok) {
+      const json = await r.json();
+      // Fusion profonde : préserve les clés SEED si absentes dans json
+      D = {
+        ...SEED,
+        ...json,
+        reprise:  Object.assign({}, SEED.reprise,  json.reprise  || {}),
+        forfaits: Object.assign({}, SEED.forfaits, json.forfaits || {})
+      };
+    }
   } catch(e) { /* fallback SEED */ }
   render();
-  document.getElementById("statusLabel").textContent = "Mis à jour le " + (history.lastUpdate || "—");
+  document.getElementById("statusLabel").textContent = "Mis à jour le " + (D.lastUpdate || "—");
 }
 
-// ── RENDER ──────────────────────────────────────────────────────────────────
+// ── Render principal ─────────────────────────────────────────────────────────
 function render() {
-  const prices = history.prices;
+  const prices  = D.prices  || SEED.prices;
+  const reprise = D.reprise || SEED.reprise;
+  const forf    = D.forfaits|| SEED.forfaits;
 
-  const vals = VENDORS.map(v => prices[v]?.slice(-1)[0]?.price || 0).filter(p => p > 0);
-  const best = Math.min(...vals);
-  const bestV = VENDORS.find(v => (prices[v]?.slice(-1)[0]?.price || 0) === best);
-  const prev = VENDORS.map(v => prices[v]?.slice(-2, -1)[0]?.price || 0);
-  const bestPrev = Math.min(...prev.filter(p => p > 0));
+  renderPrices(prices, reprise, forf);
+  renderHistory(prices);
+  renderReprise(reprise);
+  renderNuCards(prices, reprise);
+  renderForfaits(forf);
+  renderVerdict(prices, reprise, forf);
+  renderNews();
+}
 
-  document.getElementById("refBest").textContent = fmt(best);
-  document.getElementById("refBestSource").textContent = VLABELS[bestV] || "—";
-  setDelta("refBestDelta", best, bestPrev);
-
+// ── Prix référence + table ────────────────────────────────────────────────────
+function renderPrices(prices, reprise, forf) {
+  const vals    = VENDORS.map(v => prices[v]?.slice(-1)[0]?.price || 0).filter(p => p > 0);
+  const best    = Math.min(...vals);
+  const bestV   = VENDORS.find(v => (prices[v]?.slice(-1)[0]?.price || 0) === best);
+  const prevs   = VENDORS.map(v => prices[v]?.slice(-2,-1)[0]?.price || 0).filter(p => p > 0);
+  const bestPrev= prevs.length ? Math.min(...prevs) : 0;
   const amzLast = prices.amazon?.slice(-1)[0]?.price || 0;
-  const amzPrev = prices.amazon?.slice(-2, -1)[0]?.price || 0;
-  document.getElementById("refAmz").textContent = amzLast ? fmt(amzLast) : "—";
+  const amzPrev = prices.amazon?.slice(-2,-1)[0]?.price || 0;
+
+  setText("refBest",   amzLast ? fmt(best) : "—");
+  setText("refBestSource", VLABELS[bestV] || "—");
+  setDelta("refBestDelta", best, bestPrev);
+  setText("refAmz", amzLast ? fmt(amzLast) : "—");
   setDelta("refAmzDelta", amzLast, amzPrev);
 
-  document.getElementById("tBestNu").textContent = fmt(best);
-  document.getElementById("tBestNet").textContent = "~" + fmt(best - 425) + " net";
-  document.getElementById("tBestTotal").textContent = "~" + fmt(Math.round(best - 425 + 13.99 * 24));
+  // Reprise CC max
+  const ccMax = reprise?.comparecycle?.max || 425;
+  setText("tRedReprise",  ccMax);
+  setText("tBestReprise", ccMax);
+  setText("footerReprise", ccMax);
 
-  // Historique
+  // Red SFR row
+  const redP = forf?.red_sfr?.price || 12.99;
+  const redNet = 1379 - ccMax;
+  const redTotal = Math.round(redNet + redP * 24);
+  setText("tRedNet",     "~" + fmt(redNet) + " net");
+  setText("tRedForfait", fmtF(redP) + "/mois");
+  setText("tRedTotal",   "~" + fmt(redTotal));
+
+  // Nu + Sosh row
+  const soshP = forf?.sosh?.price || 13.99;
+  const bestNet = best - ccMax;
+  const bestTotal = Math.round(bestNet + soshP * 24);
+  setText("tBestNu",    fmt(best));
+  setText("tBestNet",   "~" + fmt(bestNet) + " net");
+  setText("tSoshForfait", fmtF(soshP) + "/mois");
+  setText("tBestTotal", "~" + fmt(bestTotal));
+
+  // Label forfait référence
+  const refP = forf?.bouygues_actuel?.price || 38;
+  setText("refForfaitPrice", fmtF(refP));
+}
+
+function setText(id, v) { const el = document.getElementById(id); if(el) el.textContent = v; }
+
+function setDelta(id, curr, prev) {
+  const el = document.getElementById(id);
+  if (!el || !prev || prev === curr) { if(el) el.textContent = ""; return; }
+  const diff = curr - prev;
+  el.textContent = (diff > 0 ? "▲ +" : "▼ ") + Math.abs(diff) + " € vs veille";
+  el.className = "cdelta " + (diff > 0 ? "up" : "down");
+}
+
+// ── Historique ────────────────────────────────────────────────────────────────
+function renderHistory(prices) {
   const hg = document.getElementById("histGrid");
   hg.innerHTML = "";
   VENDORS.forEach(v => {
     const entries = [...(prices[v] || [])].slice(-5).reverse();
     const rows = entries.map((e, i) => {
-      const p = entries[i + 1];
+      const p = entries[i+1];
       let arr = "", ac = "#888";
-      if (p) { if (e.price < p.price) { arr = "↓"; ac = "#4ade80"; } else if (e.price > p.price) { arr = "↑"; ac = "#f87171"; } else { arr = "→"; } }
-      return '<div class="hrow"><span class="hdate">' + e.date + '</span>' + (arr ? '<span class="harr" style="color:' + ac + '">' + arr + '</span>' : '') + '<span class="hprice">' + fmt(e.price) + '</span></div>';
+      if (p) {
+        if (e.price < p.price) { arr = "↓"; ac = "#4ade80"; }
+        else if (e.price > p.price) { arr = "↑"; ac = "#f87171"; }
+        else { arr = "→"; }
+      }
+      return '<div class="hrow"><span class="hdate">'+e.date+'</span>'
+        + (arr ? '<span class="harr" style="color:'+ac+'">'+arr+'</span>' : '')
+        + '<span class="hprice">'+fmt(e.price)+'</span></div>';
     }).join("");
-    hg.innerHTML += '<div class="hcard"><div class="hcard-title">' + VLABELS[v] + '</div>' + rows + '</div>';
+    hg.innerHTML += '<div class="hcard"><div class="hcard-title">'+VLABELS[v]+'</div>'+rows+'</div>';
   });
+}
 
-  // Nu cards
+// ── Reprise ───────────────────────────────────────────────────────────────────
+function renderReprise(r) {
+  const cc   = Object.assign({max:425},             r.comparecycle || {});
+  const ap   = Object.assign({min:290, max:320},    r.apple        || {});
+  const bou  = Object.assign({min:200, max:300, bonus:100}, r.bouygues || {});
+  const boul = Object.assign({min:250, max:320},    r.boulanger    || {});
+  const fn   = Object.assign({min:250, max:310},    r.fnac         || {});
+  const amz  = Object.assign({min:220, max:290},    r.amazon       || {});
+
+  const cards = [
+    {
+      cls:"green", vendor:"🥇 CompaRecycle",
+      price:"jusqu'à " + cc.max + " €",
+      priceColor:"var(--green)",
+      desc:"Compare 50+ repreneurs. Virement bancaire direct, sans obligation d'achat. Meilleur taux constaté pour un 15 Plus en bon état.",
+      pro:"✓ Prix le plus élevé · liberté totale · pas d'engagement",
+      combined:"→ Combiner avec n'importe quel achat séparé",
+      link:'<a href="https://comparecycle.com/revendre-smartphone/iphone" target="_blank" style="font-size:11px">comparecycle.com →</a>'
+    },
+    {
+      cls:"", vendor:"Apple Trade In",
+      price:fmtRange(ap.min, ap.max),
+      desc:"Crédit déductible uniquement sur achat Apple Store. Simple et immédiat.",
+      pro:"✓ Immédiat, fiable",
+      con:"⚠ Crédit Apple uniquement, pas de virement",
+      link:'<a href="https://www.apple.com/fr/shop/buy-iphone/iphone-17-pro" target="_blank" style="font-size:11px">apple.com/fr →</a>'
+    },
+    {
+      cls:"", vendor:"Bouygues (Recommerce)",
+      price:fmtRange(bou.min, bou.max) + " + " + (bou.bonus||100) + " € bonus",
+      desc:"Bonus " + (bou.bonus||100) + " € si souscription forfait 100 Go+ avec engagement 24 mois.",
+      pro:"✓ Bonus intéressant couplé forfait",
+      con:"⚠ Engagement 24 mois obligatoire pour le bonus"
+    },
+    {
+      cls:"", vendor:"Boulanger",
+      price:fmtRange(boul.min, boul.max),
+      desc:"Estimation en ligne, dépôt en magasin ou point relais. Carte cadeau immédiate si dépôt en magasin.",
+      pro:"✓ Rapide en magasin à Toulouse",
+      con:"⚠ Bon d'achat Boulanger uniquement (1 an)",
+      combined:"→ Intéressant si achat iPhone chez Boulanger"
+    },
+    {
+      cls:"", vendor:"Fnac Reprise",
+      price:fmtRange(fn.min, fn.max),
+      desc:"Via comparecycle partenaire Fnac. Virement sous 15 jours. Bonus possible si achat simultané.",
+      pro:"✓ Flexible · se cumule avec achat Fnac",
+      con:"⚠ Délai paiement 15 jours",
+      link:'<a href="https://www.fnac.com/guides/common/reprise/default.aspx" target="_blank" style="font-size:11px">fnac.com reprise →</a>'
+    },
+    {
+      cls:"", vendor:"Amazon Renew",
+      price:fmtRange(amz.min, amz.max),
+      desc:"Via Recommerce. Crédit Amazon Gift Card. Estimation en ligne, envoi gratuit.",
+      pro:"✓ Pratique si achat sur Amazon",
+      con:"⚠ Crédit Amazon uniquement · moins élevé que spécialistes"
+    }
+  ];
+
+  document.getElementById("repriseGrid").innerHTML = cards.map(c =>
+    '<div class="card ' + c.cls + '">'
+    + '<div class="rhead"><span class="rvendor">' + c.vendor + '</span>'
+    + '<span class="rprice"' + (c.priceColor ? ' style="color:'+c.priceColor+'"' : '') + '>' + c.price + '</span></div>'
+    + '<div class="muted2">' + c.desc + '</div>'
+    + (c.pro     ? '<div class="pro">'      + c.pro      + '</div>' : '')
+    + (c.con     ? '<div class="con">'      + c.con      + '</div>' : '')
+    + (c.combined? '<div class="combined">' + c.combined + '</div>' : '')
+    + (c.link    ? '<div class="mt6">'      + c.link     + '</div>' : '')
+    + '</div>'
+  ).join("");
+}
+
+// ── Nu cards ──────────────────────────────────────────────────────────────────
+function renderNuCards(prices, reprise) {
+  const ccMax = reprise?.comparecycle?.max || 425;
+  const fnacMax = reprise?.fnac?.max || 310;
   const nuDefs = [
-    { vendor: "🥇 Idealo marketplace", key: "idealo", detail: "Bleu intense 256 Go · livraison express · code promo dispo", pro: "✓ Prix marché le plus bas", con: "⚠ Vérifier le vendeur · pas de reprise directe", reprise: 425, repriseLabel: "CompaRecycle", green: true },
-    { vendor: "Amazon France", key: "amazon", detail: "256 Go · Prime rapide · reprise Amazon Renew possible", pro: "✓ Fiable, retours 30 jours", con: "⚠ Reprise Amazon (~220–290 €) < CompaRecycle — faire reprise séparément", reprise: 425, repriseLabel: "CompaRecycle", green: false },
-    { vendor: "CDiscount", key: "cdiscount", detail: "256 Go · vérifier dispo bleu intense · pas de reprise directe", pro: "✓ Vendeur agréé connu", con: "⚠ Faire reprise séparément via CompaRecycle", reprise: 425, repriseLabel: "CompaRecycle", green: false },
-    { vendor: "Fnac (adhérent Fnac+)", key: "fnac", detail: "Bleu intense 256 Go · -5% adhérent · livraison 1j", pro: "✓ SAV fiable · combo achat + reprise magasin", con: "⚠ Reprise Fnac (~250–310 €) en carte cadeau uniquement", reprise: 300, repriseLabel: "Fnac (carte cadeau)", green: false },
+    {vendor:"🥇 Idealo marketplace", key:"idealo", detail:"Bleu intense 256 Go · livraison express · code promo dispo", pro:"✓ Prix marché le plus bas", con:"⚠ Vérifier le vendeur · pas de reprise directe", reprise:ccMax, repriseLabel:"CompaRecycle", green:true},
+    {vendor:"Amazon France",         key:"amazon", detail:"256 Go · Prime rapide · retours 30 jours",                   pro:"✓ Fiable, retours 30 jours",   con:"⚠ Reprise Amazon moins bonne — faire séparément via CompaRecycle", reprise:ccMax, repriseLabel:"CompaRecycle", green:false},
+    {vendor:"CDiscount",             key:"cdiscount", detail:"256 Go · vérifier dispo bleu intense",                   pro:"✓ Vendeur agréé",               con:"⚠ Faire reprise séparément via CompaRecycle", reprise:ccMax, repriseLabel:"CompaRecycle", green:false},
+    {vendor:"Fnac (adhérent Fnac+)", key:"fnac",  detail:"Bleu intense 256 Go · -5% adhérent · livraison 1j",         pro:"✓ SAV fiable · combo achat + reprise magasin", con:"⚠ Reprise Fnac en carte cadeau uniquement", reprise:fnacMax, repriseLabel:"Fnac (carte cadeau)", green:false}
   ];
   const ng = document.getElementById("nuGrid");
   ng.innerHTML = "";
   nuDefs.forEach(c => {
     const rawP = prices[c.key]?.slice(-1)[0]?.price || 0;
-    const net = rawP > 0 ? rawP - c.reprise : null;
+    const net  = rawP > 0 ? rawP - c.reprise : null;
     const netColor = net !== null && net < 1000 ? "#4ade80" : "#fbbf24";
     ng.innerHTML += '<div class="card' + (c.green ? " green" : "") + '">'
       + '<div class="nhead"><span class="nvendor">' + c.vendor + '</span>'
@@ -443,23 +501,96 @@ function render() {
       + (net !== null ? '<div class="nnet">💰 Net après reprise ' + c.repriseLabel + ' ' + fmt(c.reprise) + ' : <span style="color:' + netColor + '">' + fmt(net) + '</span></div>' : '')
       + '</div>';
   });
+}
 
-  // News
+// ── Forfaits ─────────────────────────────────────────────────────────────────
+const FORFAIT_META = {
+  bouygues_actuel: {cls:"orange", note:"ton abonnement actuel",                     isRef:true},
+  red_sfr:         {cls:"purple", rank:"🥇", note:"sans engagement · 38 Go UE/DOM · appels illimités · réseau SFR"},
+  byu:             {cls:"",       rank:"🥈", note:"sans engagement · même réseau Bouygues · 50 Go UE/DOM"},
+  lebara:          {cls:"",       rank:"",   note:"sans engagement · SIM gratuite · réseau SFR"},
+  sosh:            {cls:"",       rank:"",   note:"sans engagement · réseau Orange · bonne couverture Toulouse"},
+  nrj:             {cls:"",       rank:"",   note:"SIM 1 € · réseau Bouygues · si 120 Go te suffisent"}
+};
+const FORFAIT_ORDER = ["bouygues_actuel","red_sfr","byu","lebara","sosh","nrj"];
+
+function renderForfaits(forf) {
+  const ref      = forf.bouygues_actuel?.price || 38;
+  const refTotal = Math.round(ref * 24);
+  document.getElementById("refForfaitPrice").textContent = fmtF(ref);
+
+  document.getElementById("forfaitsGrid").innerHTML = FORFAIT_ORDER.map(key => {
+    const f = forf[key]; if (!f) return "";
+    const m = FORFAIT_META[key] || {};
+    const isRef  = m.isRef || false;
+    const total24 = Math.round(f.price * 24);
+    const saving  = isRef ? null : refTotal - total24;
+
+    return '<div class="card ' + (m.cls||"") + '">'
+      + '<div class="fname">' + (m.rank ? m.rank + " " : "") + f.label + (f.data ? " — " + f.data + " 5G" : "") + '</div>'
+      + '<div class="fprice"' + (isRef ? ' style="color:var(--yellow)"' : "") + '>' + fmtF(f.price) + '/mois</div>'
+      + '<div class="fdetail">' + f.data + ' · 5G · ' + (m.note||"") + '</div>'
+      + (isRef
+          ? '<div class="fsaving" style="color:var(--red)">→ ~' + refTotal + ' € / 24 mois · référence à battre</div>'
+          : '<div class="fsaving" style="color:var(--green)">→ ' + total24 + ' € / 24 mois · économie ~' + saving + ' €</div>')
+      + (f.lastUpdate ? '<div class="fupdate">⏱ prix vérifié le ' + f.lastUpdate + '</div>' : '')
+      + '</div>';
+  }).join("");
+}
+
+// ── Verdict ───────────────────────────────────────────────────────────────────
+function renderVerdict(prices, reprise, forf) {
+  const vals  = VENDORS.map(v => prices[v]?.slice(-1)[0]?.price || 0).filter(p => p > 0);
+  const best  = Math.min(...vals);
+  const ccMax = reprise?.comparecycle?.max || 425;
+  const redP  = forf?.red_sfr?.price  || 12.99;
+  const soshP = forf?.sosh?.price     || 13.99;
+  const byuP  = forf?.byu?.price      || 16.99;
+  const BOUYGUES_REF = 2070;
+
+  const eco1 = Math.round(best - ccMax + redP  * 24); // Nu + Red SFR + CompaRecycle
+  const eco2 = Math.round(1379 - ccMax + redP  * 24); // Red SFR ODR + CompaRecycle
+  const eco3 = Math.round(best -   300 + byuP  * 24); // Nu + B&You + Boulanger
+  const save1 = BOUYGUES_REF - eco1;
+  const save2 = BOUYGUES_REF - eco2;
+
+  document.getElementById("verdictCard").innerHTML =
+    '<div style="font-weight:800;font-size:15px;margin-bottom:12px;color:#93c5fd">Top 3 des montages financiers</div>'
+    + '<div class="vrow"><span class="vicon">🟢</span><div>'
+    + '<strong>Scénario optimal :</strong> Acheter nu (meilleur prix actuel&nbsp;: <strong>' + fmt(best) + '</strong>) '
+    + '+ reprise 15 Plus via CompaRecycle (~' + ccMax + '&nbsp;€) '
+    + '+ Red by SFR ' + fmtF(redP) + '/mois. '
+    + 'Coût net&nbsp;: ~' + fmt(best - ccMax) + ' téléphone + ' + fmt(Math.round(redP*24)) + ' forfait '
+    + '= <strong>~' + fmt(eco1) + ' sur 24 mois</strong>. '
+    + 'Économie ≈ ' + fmt(save1) + ' vs renouvellement Bouygues.'
+    + '</div></div>'
+    + '<div class="vrow"><span class="vicon">🟡</span><div>'
+    + '<strong>Scénario simple :</strong> Red by SFR tout-en-un (1&nbsp;379&nbsp;€ ODR + ' + fmtF(redP) + '/mois) '
+    + '+ reprise CompaRecycle indépendante (~' + ccMax + '&nbsp;€). '
+    + 'Net&nbsp;: ~' + fmt(1379 - ccMax) + ' mobile + ' + fmt(Math.round(redP*24)) + ' forfait '
+    + '= <strong>~' + fmt(eco2) + ' sur 24 mois</strong>. Sans engagement, zéro prise de tête.'
+    + '</div></div>'
+    + '<div class="vrow"><span class="vicon">🔵</span><div>'
+    + '<strong>Scénario réseau Bouygues :</strong> Acheter nu (~' + fmt(best) + ') '
+    + '+ reprise Boulanger carte cadeau (~300&nbsp;€) + B&amp;You ' + fmtF(byuP) + '/mois. '
+    + 'Net&nbsp;: ~' + fmt(best - 300) + ' + ' + fmt(Math.round(byuP*24)) + ' '
+    + '= <strong>~' + fmt(eco3) + ' sur 24 mois</strong>. Même réseau, liberté totale.'
+    + '</div></div>'
+    + '<div class="vrow"><span class="vicon">🔴</span><div>'
+    + '<strong>À éviter&nbsp;:</strong> Le renouvellement Bouygues actuel (~' + fmt(BOUYGUES_REF) + ' sur 24 mois) '
+    + 'reste le plus onéreux de tous les scénarios, même avec son bonus reprise.'
+    + '</div></div>';
+}
+
+// ── News ──────────────────────────────────────────────────────────────────────
+function renderNews() {
   const nc = document.getElementById("newsContainer");
-  nc.innerHTML = [...history.news].reverse().slice(0, 12).map((n, i) =>
+  nc.innerHTML = [...(D.news || [])].reverse().slice(0,12).map((n, i) =>
     '<div class="news-item' + (i === 0 ? " new-item" : "") + '">'
     + '<span class="ndate">' + n.date + '</span>'
     + '<span class="ntext">' + n.text + '</span>'
     + '</div>'
   ).join("");
-}
-
-function setDelta(id, curr, prev) {
-  const el = document.getElementById(id);
-  if (!el || !prev || prev === curr) { if (el) el.textContent = ""; return; }
-  const diff = curr - prev;
-  el.textContent = (diff > 0 ? "▲ +" : "▼ ") + Math.abs(diff) + " € vs veille";
-  el.className = "cdelta " + (diff > 0 ? "up" : "down");
 }
 
 init();

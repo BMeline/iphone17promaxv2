@@ -167,5 +167,63 @@
       "date": "29 juin 2026",
       "text": "🏷️ Soldes d'été : iPhone 17 Pro Max 256 Go à 1179 € sur Idealo, meilleur prix du marché ! Amazon à 1309 €."
     }
-  ]
+  ],
+  "reprise": {
+    "comparecycle": {
+      "max": 425
+    },
+    "apple": {
+      "min": 290,
+      "max": 320
+    },
+    "bouygues": {
+      "min": 200,
+      "max": 300,
+      "bonus": 100
+    },
+    "boulanger": {
+      "min": 250,
+      "max": 320
+    },
+    "fnac": {
+      "min": 250,
+      "max": 310
+    },
+    "amazon": {
+      "min": 220,
+      "max": 290
+    }
+  },
+  "forfaits": {
+    "bouygues_actuel": {
+      "price": 38.0,
+      "data": "250 Go",
+      "label": "Bouygues actuel"
+    },
+    "red_sfr": {
+      "price": 12.99,
+      "data": "250 Go",
+      "label": "Red by SFR"
+    },
+    "byu": {
+      "price": 16.99,
+      "data": "200 Go",
+      "label": "B&You (Bouygues)"
+    },
+    "sosh": {
+      "price": 13.99,
+      "data": "150 Go",
+      "label": "Sosh (Orange)"
+    },
+    "lebara": {
+      "price": 8.99,
+      "data": "250 Go",
+      "label": "Lebara"
+    },
+    "nrj": {
+      "price": 7.49,
+      "data": "120 Go",
+      "label": "NRJ Mobile"
+    }
+  }
 }
