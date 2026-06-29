@@ -31,7 +31,7 @@
         "date": "28/06"
       },
       {
-        "price": 1309,
+        "price": 1299,
         "date": "29/06"
       }
     ],
@@ -117,7 +117,7 @@
         "date": "28/06"
       },
       {
-        "price": 1179,
+        "price": 1278,
         "date": "29/06"
       }
     ]
@@ -166,6 +166,10 @@
     {
       "date": "29 juin 2026",
       "text": "🏷️ Soldes d'été : iPhone 17 Pro Max 256 Go à 1179 € sur Idealo, meilleur prix du marché ! Amazon à 1309 €."
+    },
+    {
+      "date": "29 June 2026",
+      "text": "📱 iPhone 17 Pro Max 256 Go dès 1 278 € (Idealo), reprise 15 Plus 425 € sur CompaRecycle. Lebara 250 Go à 8,99 €/mois, meilleure offre 5G du marché !"
     }
   ],
   "reprise": {
@@ -201,29 +205,34 @@
       "label": "Bouygues actuel"
     },
     "red_sfr": {
-      "price": 12.99,
+      "price": 15.99,
       "data": "250 Go",
-      "label": "Red by SFR"
+      "label": "Red by SFR",
+      "lastUpdate": "2026-06-29"
     },
     "byu": {
-      "price": 16.99,
+      "price": 13.99,
       "data": "200 Go",
-      "label": "B&You (Bouygues)"
+      "label": "B&You (Bouygues)",
+      "lastUpdate": "2026-06-29"
     },
     "sosh": {
       "price": 13.99,
       "data": "150 Go",
-      "label": "Sosh (Orange)"
+      "label": "Sosh (Orange)",
+      "lastUpdate": "2026-06-29"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
-      "label": "Lebara"
+      "label": "Lebara",
+      "lastUpdate": "2026-06-29"
     },
     "nrj": {
-      "price": 7.49,
+      "price": 7.99,
       "data": "120 Go",
-      "label": "NRJ Mobile"
+      "label": "NRJ Mobile",
+      "lastUpdate": "2026-06-29"
     }
   }
 }
