@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-28",
+  "lastUpdate": "2026-06-29",
   "prices": {
     "amazon": [
       {
@@ -29,6 +29,10 @@
       {
         "price": 1379,
         "date": "28/06"
+      },
+      {
+        "price": 1309,
+        "date": "29/06"
       }
     ],
     "fnac": [
@@ -59,6 +63,10 @@
       {
         "price": 1479,
         "date": "28/06"
+      },
+      {
+        "price": 1479,
+        "date": "29/06"
       }
     ],
     "cdiscount": [
@@ -107,6 +115,10 @@
       {
         "price": 1285,
         "date": "28/06"
+      },
+      {
+        "price": 1179,
+        "date": "29/06"
       }
     ]
   },
@@ -150,6 +162,10 @@
     {
       "date": "28 juin 2026",
       "text": "🔥 Amazon -100€ : iPhone 17 Pro Max 256Go Orange cosmique à 1379€, meilleur prix toutes sources 1285€ sur Rakuten (Idealo)"
+    },
+    {
+      "date": "29 juin 2026",
+      "text": "🏷️ Soldes d'été : iPhone 17 Pro Max 256 Go à 1179 € sur Idealo, meilleur prix du marché ! Amazon à 1309 €."
     }
   ]
 }
