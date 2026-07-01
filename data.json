@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-06-30",
+  "lastUpdate": "2026-07-01",
   "prices": {
     "amazon": [
       {
@@ -37,6 +37,10 @@
       {
         "price": 1469,
         "date": "30/06"
+      },
+      {
+        "price": 1314,
+        "date": "01/07"
       }
     ],
     "fnac": [
@@ -75,6 +79,10 @@
       {
         "price": 1479,
         "date": "30/06"
+      },
+      {
+        "price": 1479,
+        "date": "01/07"
       }
     ],
     "cdiscount": [
@@ -135,6 +143,10 @@
       {
         "price": 1288,
         "date": "30/06"
+      },
+      {
+        "price": 1278,
+        "date": "01/07"
       }
     ]
   },
@@ -190,6 +202,10 @@
     {
       "date": "30 June 2026",
       "text": "📱 iPhone 17 Pro Max 256Go dès 1 288€ (E.Leclerc). Reprise 15 Plus : 425€ sur CompaRecycle. Meilleur forfait : NRJ 120Go à 6,99€/mois !"
+    },
+    {
+      "date": "1 July 2026",
+      "text": "📱 Soldes été : iPhone 17 Pro Max 256 Go dès 1278€ (Idealo). Amazon à 1314€ (-165€). Reprise 15 Plus stable à 425€. Lebara 250 Go à 8,99€/mois, imbattable !"
     }
   ],
   "reprise": {
@@ -228,31 +244,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-06-30"
+      "lastUpdate": "2026-07-01"
     },
     "byu": {
-      "price": 16.99,
+      "price": 13.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-06-30"
+      "lastUpdate": "2026-07-01"
     },
     "sosh": {
       "price": 13.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-06-30"
+      "lastUpdate": "2026-07-01"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-06-30"
+      "lastUpdate": "2026-07-01"
     },
     "nrj": {
-      "price": 6.99,
+      "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-06-30"
+      "lastUpdate": "2026-07-01"
     }
   }
 }
