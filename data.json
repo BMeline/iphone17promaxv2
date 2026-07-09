@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-08",
+  "lastUpdate": "2026-07-09",
   "prices": {
     "amazon": [
       {
@@ -65,6 +65,10 @@
       {
         "price": 1299,
         "date": "08/07"
+      },
+      {
+        "price": 1348,
+        "date": "09/07"
       }
     ],
     "fnac": [
@@ -131,6 +135,10 @@
       {
         "price": 1479,
         "date": "08/07"
+      },
+      {
+        "price": 1479,
+        "date": "09/07"
       }
     ],
     "cdiscount": [
@@ -169,6 +177,10 @@
       {
         "price": 1469,
         "date": "08/07"
+      },
+      {
+        "price": 1469,
+        "date": "09/07"
       }
     ],
     "idealo": [
@@ -239,6 +251,10 @@
       {
         "price": 1168,
         "date": "08/07"
+      },
+      {
+        "price": 1168,
+        "date": "09/07"
       }
     ]
   },
@@ -326,6 +342,10 @@
     {
       "date": "8 July 2026",
       "text": "📱 iPhone 17 Pro Max 256 Go dès 1168 € (Idealo), reprise 15 Plus jusqu'à 429 € via CompaRecycle, et forfait Lebara 250 Go toujours à 8,99 €/mois."
+    },
+    {
+      "date": "9 July 2026",
+      "text": "📉 iPhone 17 Pro Max 256 Go dès 1 168 € (Idealo), Amazon à 1 348 €. Reprise 15 Plus jusqu'à 429 € (CompaRecycle). Forfaits : Lebara 250 Go à 8,99 €."
     }
   ],
   "reprise": {
@@ -364,31 +384,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-07-08"
+      "lastUpdate": "2026-07-09"
     },
     "byu": {
       "price": 14.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-07-08"
+      "lastUpdate": "2026-07-09"
     },
     "sosh": {
       "price": 13.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-07-08"
+      "lastUpdate": "2026-07-09"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-07-08"
+      "lastUpdate": "2026-07-09"
     },
     "nrj": {
       "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-07-08"
+      "lastUpdate": "2026-07-09"
     }
   }
 }
