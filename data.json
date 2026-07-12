@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-11",
+  "lastUpdate": "2026-07-12",
   "prices": {
     "amazon": [
       {
@@ -77,6 +77,10 @@
       {
         "price": 1299,
         "date": "11/07"
+      },
+      {
+        "price": 1348,
+        "date": "12/07"
       }
     ],
     "fnac": [
@@ -155,6 +159,10 @@
       {
         "price": 1479,
         "date": "11/07"
+      },
+      {
+        "price": 1479,
+        "date": "12/07"
       }
     ],
     "cdiscount": [
@@ -205,6 +213,10 @@
       {
         "price": 1469,
         "date": "11/07"
+      },
+      {
+        "price": 1348,
+        "date": "12/07"
       }
     ],
     "idealo": [
@@ -287,6 +299,10 @@
       {
         "price": 1168,
         "date": "11/07"
+      },
+      {
+        "price": 1168,
+        "date": "12/07"
       }
     ]
   },
@@ -386,11 +402,15 @@
     {
       "date": "11 July 2026",
       "text": "📉 iPhone 17 Pro Max 256 Go dès 1168 € (Idealo, via Rakuten). Reprise 15 Plus jusqu'à 429 € chez CompaRecycle. Forfait star : Lebara 250 Go 5G à 8,99 €/mois."
+    },
+    {
+      "date": "12 July 2026",
+      "text": "📉 iPhone 17 Pro Max 256 Go dès 1 168 € (Idealo). Reprise 15 Plus jusqu'à 510 € via CompaRecycle. Forfait Lebara 250 Go 5G imbattable à 8,99 €/mois."
     }
   ],
   "reprise": {
     "comparecycle": {
-      "max": 429
+      "max": 510
     },
     "apple": {
       "min": 290,
@@ -424,31 +444,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-07-11"
+      "lastUpdate": "2026-07-12"
     },
     "byu": {
-      "price": 13.99,
+      "price": 14.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-07-11"
+      "lastUpdate": "2026-07-12"
     },
     "sosh": {
-      "price": 13.99,
+      "price": 11.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-07-11"
+      "lastUpdate": "2026-07-12"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-07-11"
+      "lastUpdate": "2026-07-12"
     },
     "nrj": {
       "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-07-11"
+      "lastUpdate": "2026-07-12"
     }
   }
 }
