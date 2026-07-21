@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-20",
+  "lastUpdate": "2026-07-21",
   "prices": {
     "amazon": [
       {
@@ -113,6 +113,10 @@
       {
         "price": 1299,
         "date": "20/07"
+      },
+      {
+        "price": 1299,
+        "date": "21/07"
       }
     ],
     "fnac": [
@@ -227,6 +231,10 @@
       {
         "price": 1479,
         "date": "20/07"
+      },
+      {
+        "price": 1479,
+        "date": "21/07"
       }
     ],
     "cdiscount": [
@@ -313,6 +321,10 @@
       {
         "price": 1469,
         "date": "20/07"
+      },
+      {
+        "price": 1469,
+        "date": "21/07"
       }
     ],
     "idealo": [
@@ -427,6 +439,10 @@
       {
         "price": 1168,
         "date": "19/07"
+      },
+      {
+        "price": 1398,
+        "date": "21/07"
       }
     ]
   },
@@ -562,6 +578,10 @@
     {
       "date": "20 July 2026",
       "text": "📉 iPhone 17 Pro Max 256Go dès 1299€ (Amazon), reprise 15 Plus jusqu'à 431€ (CompaRecycle), forfait Lebara 250Go à 8,99€/mois."
+    },
+    {
+      "date": "21 July 2026",
+      "text": "📱 iPhone 17 Pro Max 256Go dès 1299€ (Amazon), reprise iPhone 15 Plus jusqu'à 431€ (CompaRecycle), Lebara 250Go à 8,99€/mois."
     }
   ],
   "reprise": {
@@ -597,34 +617,34 @@
       "label": "Bouygues actuel"
     },
     "red_sfr": {
-      "price": 15.99,
+      "price": 12.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-07-20"
+      "lastUpdate": "2026-07-21"
     },
     "byu": {
-      "price": 16.99,
+      "price": 13.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-07-20"
+      "lastUpdate": "2026-07-21"
     },
     "sosh": {
       "price": 13.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-07-20"
+      "lastUpdate": "2026-07-21"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-07-20"
+      "lastUpdate": "2026-07-21"
     },
     "nrj": {
       "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-07-20"
+      "lastUpdate": "2026-07-21"
     }
   }
 }
