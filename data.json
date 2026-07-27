@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-07-26",
+  "lastUpdate": "2026-07-27",
   "prices": {
     "amazon": [
       {
@@ -129,6 +129,10 @@
       {
         "price": 1299,
         "date": "26/07"
+      },
+      {
+        "price": 1309,
+        "date": "27/07"
       }
     ],
     "fnac": [
@@ -263,6 +267,10 @@
       {
         "price": 1479,
         "date": "26/07"
+      },
+      {
+        "price": 1479,
+        "date": "27/07"
       }
     ],
     "cdiscount": [
@@ -365,6 +373,10 @@
       {
         "price": 1469,
         "date": "26/07"
+      },
+      {
+        "price": 1469,
+        "date": "27/07"
       }
     ],
     "idealo": [
@@ -499,6 +511,10 @@
       {
         "price": 1168,
         "date": "26/07"
+      },
+      {
+        "price": 1179,
+        "date": "27/07"
       }
     ]
   },
@@ -654,6 +670,10 @@
     {
       "date": "26 July 2026",
       "text": "📱 iPhone 17 Pro Max 256Go dès 1168€ sur Idealo, reprise iPhone 15 Plus jusqu'à 474€ chez CompaRecycle, forfait Lebara 250Go à 8,99€/mois."
+    },
+    {
+      "date": "27 July 2026",
+      "text": "📉 iPhone 17 Pro Max 256 Go dès 1179€ sur Idealo (Amazon 1309€). Reprise iPhone 15 Plus jusqu'à 474€ chez CompaRecycle. Lebara casse les prix : 250 Go à 8,99€/mois !"
     }
   ],
   "reprise": {
@@ -692,31 +712,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-07-26"
+      "lastUpdate": "2026-07-27"
     },
     "byu": {
-      "price": 14.99,
+      "price": 16.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-07-26"
+      "lastUpdate": "2026-07-27"
     },
     "sosh": {
       "price": 13.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-07-26"
+      "lastUpdate": "2026-07-27"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-07-26"
+      "lastUpdate": "2026-07-27"
     },
     "nrj": {
       "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-07-26"
+      "lastUpdate": "2026-07-27"
     }
   }
 }
