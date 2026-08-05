@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-04",
+  "lastUpdate": "2026-08-05",
   "prices": {
     "amazon": [
       {
@@ -157,6 +157,10 @@
       {
         "price": 1260,
         "date": "04/08"
+      },
+      {
+        "price": 1299,
+        "date": "05/08"
       }
     ],
     "fnac": [
@@ -319,6 +323,10 @@
       {
         "price": 1479,
         "date": "04/08"
+      },
+      {
+        "price": 1379,
+        "date": "05/08"
       }
     ],
     "cdiscount": [
@@ -449,6 +457,10 @@
       {
         "price": 1469,
         "date": "04/08"
+      },
+      {
+        "price": 1469,
+        "date": "05/08"
       }
     ],
     "idealo": [
@@ -790,11 +802,15 @@
     {
       "date": "4 August 2026",
       "text": "📉 iPhone 17 Pro Max 256Go dès 1179€ (Idealo), reprise iPhone 15 Plus jusqu'à 510€ (CompaRecycle), forfait Lebara 250Go à 8,99€/mois."
+    },
+    {
+      "date": "5 August 2026",
+      "text": "📱 iPhone 17 Pro Max 256 Go dès 1299€ sur Amazon, reprise iPhone 15 Plus jusqu'à 433€ chez CompaRecycle, Lebara casse les prix avec 250 Go à 8,99€/mois."
     }
   ],
   "reprise": {
     "comparecycle": {
-      "max": 510
+      "max": 433
     },
     "apple": {
       "min": 290,
@@ -828,31 +844,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-08-04"
+      "lastUpdate": "2026-08-05"
     },
     "byu": {
       "price": 16.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-08-04"
+      "lastUpdate": "2026-08-05"
     },
     "sosh": {
       "price": 11.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-08-04"
+      "lastUpdate": "2026-08-05"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-08-04"
+      "lastUpdate": "2026-08-05"
     },
     "nrj": {
       "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-08-04"
+      "lastUpdate": "2026-08-05"
     }
   }
 }
