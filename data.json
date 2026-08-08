@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-06",
+  "lastUpdate": "2026-08-08",
   "prices": {
     "amazon": [
       {
@@ -165,6 +165,10 @@
       {
         "price": 1299,
         "date": "06/08"
+      },
+      {
+        "price": 1222,
+        "date": "08/08"
       }
     ],
     "fnac": [
@@ -335,6 +339,10 @@
       {
         "price": 1379,
         "date": "06/08"
+      },
+      {
+        "price": 1379,
+        "date": "08/08"
       }
     ],
     "cdiscount": [
@@ -635,6 +643,10 @@
       {
         "price": 1160,
         "date": "06/08"
+      },
+      {
+        "price": 1210,
+        "date": "08/08"
       }
     ]
   },
@@ -826,11 +838,15 @@
     {
       "date": "6 August 2026",
       "text": "📉 iPhone 17 Pro Max 256 Go dès 1160€ (Idealo), reprise iPhone 15 Plus jusqu'à 474€ (CompaRecycle), forfait Lebara 250 Go à 8,99€/mois."
+    },
+    {
+      "date": "8 August 2026",
+      "text": "📱 iPhone 17 Pro Max 256 Go dès 1210€ (Idealo), reprise iPhone 15 Plus jusqu'à 434€ (CompaRecycle), forfait Lebara 250 Go à 8,99€/mois."
     }
   ],
   "reprise": {
     "comparecycle": {
-      "max": 474
+      "max": 434
     },
     "apple": {
       "min": 290,
@@ -864,31 +880,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-08-06"
+      "lastUpdate": "2026-08-08"
     },
     "byu": {
       "price": 16.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-08-06"
+      "lastUpdate": "2026-08-08"
     },
     "sosh": {
       "price": 11.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-08-06"
+      "lastUpdate": "2026-08-08"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-08-06"
+      "lastUpdate": "2026-08-08"
     },
     "nrj": {
       "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-08-06"
+      "lastUpdate": "2026-08-08"
     }
   }
 }
