@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-08-30",
+  "lastUpdate": "2026-08-31",
   "prices": {
     "amazon": [
       {
@@ -379,6 +379,10 @@
       {
         "price": 1379,
         "date": "30/08"
+      },
+      {
+        "price": 1379,
+        "date": "31/08"
       }
     ],
     "cdiscount": [
@@ -719,6 +723,10 @@
       {
         "price": 1140,
         "date": "30/08"
+      },
+      {
+        "price": 1140,
+        "date": "31/08"
       }
     ]
   },
@@ -938,6 +946,10 @@
     {
       "date": "30 August 2026",
       "text": "📉 iPhone 17 Pro Max 256Go dès 1139,99€ (Idealo), reprise iPhone 15 Plus jusqu'à 444€ (CompaRecycle), Lebara 250Go à 9,99€/mois : le combo gagnant de la semaine."
+    },
+    {
+      "date": "31 August 2026",
+      "text": "⚠️ iPhone 18 confirmé : keynote Apple le 9 sept. 2026. 17 Pro Max 256Go dès 1139€, reprise 15 Plus jusqu'à 444€, forfaits 200Go convergent à 15,99€."
     }
   ],
   "reprise": {
@@ -976,31 +988,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-08-30"
+      "lastUpdate": "2026-08-31"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-08-30"
+      "lastUpdate": "2026-08-31"
     },
     "sosh": {
-      "price": 13.99,
+      "price": 15.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-08-30"
+      "lastUpdate": "2026-08-31"
     },
     "lebara": {
       "price": 9.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-08-30"
+      "lastUpdate": "2026-08-31"
     },
     "nrj": {
-      "price": 6.99,
+      "price": 15.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-08-29"
+      "lastUpdate": "2026-08-31"
     }
   }
 }
