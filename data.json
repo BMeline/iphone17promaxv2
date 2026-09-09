@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-08",
+  "lastUpdate": "2026-09-09",
   "prices": {
     "amazon": [
       {
@@ -415,6 +415,10 @@
       {
         "price": 1379,
         "date": "08/09"
+      },
+      {
+        "price": 1379,
+        "date": "09/09"
       }
     ],
     "cdiscount": [
@@ -1046,6 +1050,10 @@
     {
       "date": "8 September 2026",
       "text": "📉 iPhone 17 Pro Max 256Go dès 1159,99€ sur Idealo ; reprise iPhone 15 Plus en repli à 425€ (CompaRecycle) ; forfaits 5G stables, Red/Sosh/NRJ à 15,99€, Lebara à 9,99€."
+    },
+    {
+      "date": "9 September 2026",
+      "text": "📱 iPhone 17 Pro Max 256Go à 1379€ (Fnac), reprise iPhone 15 Plus jusqu'à 425€. Keynote iPhone 18 c'est aujourd'hui, 19h !"
     }
   ],
   "reprise": {
@@ -1084,31 +1092,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-09-08"
+      "lastUpdate": "2026-09-09"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-09-08"
+      "lastUpdate": "2026-09-09"
     },
     "sosh": {
       "price": 15.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-09-08"
+      "lastUpdate": "2026-09-09"
     },
     "lebara": {
       "price": 9.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-09-08"
+      "lastUpdate": "2026-09-09"
     },
     "nrj": {
       "price": 15.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-09-08"
+      "lastUpdate": "2026-09-09"
     }
   }
 }
