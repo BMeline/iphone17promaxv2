@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-12",
+  "lastUpdate": "2026-09-13",
   "prices": {
     "amazon": [
       {
@@ -184,10 +184,6 @@
       }
     ],
     "fnac": [
-      {
-        "price": 1479,
-        "date": "24/06"
-      },
       {
         "price": 1479,
         "date": "25/06"
@@ -423,6 +419,10 @@
       {
         "price": 1379,
         "date": "12/09"
+      },
+      {
+        "price": 1379,
+        "date": "13/09"
       }
     ],
     "cdiscount": [
@@ -1070,11 +1070,15 @@
     {
       "date": "12 September 2026",
       "text": "📱 iPhone 18 Pro Max en précommande (1629€/256Go, stock en ligne déjà épuisé chez Fnac) ; iPhone 17 Pro Max stable à 1379€ Fnac, reprise 15 Plus à 425€ CompaRecycle."
+    },
+    {
+      "date": "13 September 2026",
+      "text": "📱 iPhone 17 Pro Max 256Go stable à 1379€ (Fnac), reprise 15 Plus à 426€ (CompaRecycle), Lebara reste le forfait le moins cher à 9,99€/mois (250Go)."
     }
   ],
   "reprise": {
     "comparecycle": {
-      "max": 425
+      "max": 426
     },
     "apple": {
       "min": 290,
@@ -1108,31 +1112,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-09-12"
+      "lastUpdate": "2026-09-13"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-09-12"
+      "lastUpdate": "2026-09-13"
     },
     "sosh": {
       "price": 15.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-09-12"
+      "lastUpdate": "2026-09-13"
     },
     "lebara": {
       "price": 9.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-09-12"
+      "lastUpdate": "2026-09-13"
     },
     "nrj": {
       "price": 15.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-09-12"
+      "lastUpdate": "2026-09-13"
     }
   }
 }
