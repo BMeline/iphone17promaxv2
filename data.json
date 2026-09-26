@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-22",
+  "lastUpdate": "2026-09-26",
   "prices": {
     "amazon": [
       {
@@ -213,13 +213,13 @@
       {
         "price": 1309,
         "date": "22/09"
+      },
+      {
+        "price": 1339,
+        "date": "26/09"
       }
     ],
     "fnac": [
-      {
-        "price": 1479,
-        "date": "03/07"
-      },
       {
         "price": 1479,
         "date": "04/07"
@@ -455,6 +455,10 @@
       {
         "price": 1379,
         "date": "22/09"
+      },
+      {
+        "price": 1379,
+        "date": "26/09"
       }
     ],
     "cdiscount": [
@@ -637,13 +641,13 @@
       {
         "price": 1359,
         "date": "22/09"
+      },
+      {
+        "price": 1359,
+        "date": "26/09"
       }
     ],
     "idealo": [
-      {
-        "price": 1179,
-        "date": "26/06"
-      },
       {
         "price": 1262,
         "date": "27/06"
@@ -879,6 +883,10 @@
       {
         "price": 1199,
         "date": "22/09"
+      },
+      {
+        "price": 1195,
+        "date": "26/09"
       }
     ]
   },
@@ -1190,11 +1198,15 @@
     {
       "date": "22 September 2026",
       "text": "📱 iPhone 18 Pro lancé le 9/09 : iPhone 17 Pro Max 256Go dès 1199€ (Idealo), reprise 15 Plus jusqu'à 428€, NRJ Mobile 120Go à 6,99€/mois."
+    },
+    {
+      "date": "26 September 2026",
+      "text": "📉 iPhone 17 Pro Max 256Go dès 1195€ (Idealo) après le lancement de l'iPhone 18 Pro. Reprise 15 Plus jusqu'à 425€. Sosh arrête son forfait 150Go."
     }
   ],
   "reprise": {
     "comparecycle": {
-      "max": 428
+      "max": 425
     },
     "apple": {
       "min": 290,
@@ -1228,13 +1240,13 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-09-22"
+      "lastUpdate": "2026-09-26"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-09-22"
+      "lastUpdate": "2026-09-26"
     },
     "sosh": {
       "price": 13.99,
@@ -1246,13 +1258,13 @@
       "price": 9.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-09-22"
+      "lastUpdate": "2026-09-26"
     },
     "nrj": {
       "price": 6.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-09-22"
+      "lastUpdate": "2026-09-26"
     }
   }
 }
