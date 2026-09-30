@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-09-29",
+  "lastUpdate": "2026-09-30",
   "prices": {
     "amazon": [
       {
@@ -229,13 +229,13 @@
       {
         "price": 1275,
         "date": "29/09"
+      },
+      {
+        "price": 1275,
+        "date": "30/09"
       }
     ],
     "fnac": [
-      {
-        "price": 1479,
-        "date": "08/07"
-      },
       {
         "price": 1479,
         "date": "09/07"
@@ -471,6 +471,10 @@
       {
         "price": 1379,
         "date": "29/09"
+      },
+      {
+        "price": 1379,
+        "date": "30/09"
       }
     ],
     "cdiscount": [
@@ -669,6 +673,10 @@
       {
         "price": 1359,
         "date": "29/09"
+      },
+      {
+        "price": 1359,
+        "date": "30/09"
       }
     ],
     "idealo": [
@@ -1238,6 +1246,10 @@
     {
       "date": "29 September 2026",
       "text": "📱 iPhone 18 confirmé & déjà lancé (18/09) ! iPhone 17 Pro Max 256Go dès 1275€, reprise 15 Plus jusqu'à 425€, forfait Lebara 250Go à 9,99€/mois."
+    },
+    {
+      "date": "30 September 2026",
+      "text": "📱 iPhone 18 confirmé & déjà lancé (18/09) ! iPhone 17 Pro Max 256Go dès 1275€, reprise 15 Plus jusqu'à 425€, forfait Lebara 250Go à 9,99€/mois."
     }
   ],
   "reprise": {
@@ -1276,31 +1288,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-09-29"
+      "lastUpdate": "2026-09-30"
     },
     "byu": {
       "price": 14.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-09-29"
+      "lastUpdate": "2026-09-30"
     },
     "sosh": {
       "price": 11.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-09-29"
+      "lastUpdate": "2026-09-30"
     },
     "lebara": {
       "price": 9.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-09-29"
+      "lastUpdate": "2026-09-30"
     },
     "nrj": {
       "price": 7.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-09-29"
+      "lastUpdate": "2026-09-30"
     }
   }
 }
