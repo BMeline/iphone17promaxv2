@@ -231,7 +231,7 @@
         "date": "29/09"
       },
       {
-        "price": 1275,
+        "price": 1339,
         "date": "30/09"
       }
     ],
@@ -675,7 +675,7 @@
         "date": "29/09"
       },
       {
-        "price": 1359,
+        "price": 1329,
         "date": "30/09"
       }
     ],
@@ -1249,12 +1249,12 @@
     },
     {
       "date": "30 September 2026",
-      "text": "📱 iPhone 18 confirmé & déjà lancé (18/09) ! iPhone 17 Pro Max 256Go dès 1275€, reprise 15 Plus jusqu'à 425€, forfait Lebara 250Go à 9,99€/mois."
+      "text": "📉 iPhone 17 Pro Max 256Go dès 1329€ (CDiscount) ; reprise 15 Plus jusqu'à 426€ (CompaRecycle) ; Sosh 150Go à 11,99€/mois, forfait le moins cher aujourd'hui."
     }
   ],
   "reprise": {
     "comparecycle": {
-      "max": 425
+      "max": 426
     },
     "apple": {
       "min": 290,
@@ -1309,7 +1309,7 @@
       "lastUpdate": "2026-09-30"
     },
     "nrj": {
-      "price": 7.99,
+      "price": 6.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
       "lastUpdate": "2026-09-30"
