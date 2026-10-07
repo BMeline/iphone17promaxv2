@@ -1,11 +1,7 @@
 {
-  "lastUpdate": "2026-10-06",
+  "lastUpdate": "2026-10-07",
   "prices": {
     "amazon": [
-      {
-        "price": 1299,
-        "date": "26/06"
-      },
       {
         "price": 1469,
         "date": "27/06"
@@ -241,13 +237,13 @@
       {
         "price": 1379,
         "date": "06/10"
+      },
+      {
+        "price": 1309,
+        "date": "07/10"
       }
     ],
     "fnac": [
-      {
-        "price": 1479,
-        "date": "11/07"
-      },
       {
         "price": 1479,
         "date": "12/07"
@@ -483,6 +479,10 @@
       {
         "price": 1379,
         "date": "04/10"
+      },
+      {
+        "price": 1379,
+        "date": "07/10"
       }
     ],
     "cdiscount": [
@@ -709,13 +709,13 @@
       {
         "price": 1309,
         "date": "06/10"
+      },
+      {
+        "price": 1359,
+        "date": "07/10"
       }
     ],
     "idealo": [
-      {
-        "price": 1288,
-        "date": "30/06"
-      },
       {
         "price": 1278,
         "date": "01/07"
@@ -951,6 +951,10 @@
       {
         "price": 1349,
         "date": "04/10"
+      },
+      {
+        "price": 1309,
+        "date": "07/10"
       }
     ]
   },
@@ -1306,6 +1310,10 @@
     {
       "date": "6 October 2026",
       "text": "📱 iPhone 17 Pro Max 256 Go: 1 309 € (CDiscount). Reprise iPhone 15 Plus jusqu'à 426 € (CompaRecycle). Sosh 150 Go à 11,99 €/mois, meilleur forfait."
+    },
+    {
+      "date": "7 October 2026",
+      "text": "📅 iPhone 18 confirme (keynote 9/09, sortie 18/09) ! iPhone 17 Pro Max 256Go des 1309€ (Amazon). Reprise iPhone 15 Plus jusqu'a 426€ sur CompaRecycle."
     }
   ],
   "reprise": {
@@ -1344,31 +1352,31 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-10-06"
+      "lastUpdate": "2026-10-07"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-10-06"
+      "lastUpdate": "2026-10-07"
     },
     "sosh": {
-      "price": 11.99,
+      "price": 13.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-10-06"
+      "lastUpdate": "2026-10-07"
     },
     "lebara": {
-      "price": 8.99,
+      "price": 9.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-10-06"
+      "lastUpdate": "2026-10-07"
     },
     "nrj": {
-      "price": 8.99,
+      "price": 6.99,
       "data": "120 Go",
       "label": "NRJ Mobile",
-      "lastUpdate": "2026-10-02"
+      "lastUpdate": "2026-10-07"
     }
   }
 }
