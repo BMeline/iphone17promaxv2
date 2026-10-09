@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-10-08",
+  "lastUpdate": "2026-10-09",
   "prices": {
     "amazon": [
       {
@@ -965,10 +965,6 @@
   "news": [
     {
       "date": "22 juin",
-      "text": "🚀 <b>Lancement de la veille.</b> Soldes J-2. Prix établis : Idealo 1 171 €, Amazon 1 309 €, Fnac ~1 379 €, CDiscount 1 353 €."
-    },
-    {
-      "date": "22 juin",
       "text": "📊 <b>CompaRecycle</b> estime l'iPhone 15 Plus jusqu'à 425 € en bon état — meilleure reprise identifiée (virement sans obligation d'achat)."
     },
     {
@@ -1322,6 +1318,10 @@
     {
       "date": "8 October 2026",
       "text": "📱 iPhone 17 Pro Max 256 Go dès 1 309 € chez Cdiscount ; forfait Lebara 250 Go toujours a 8,99€/mois, imbattable."
+    },
+    {
+      "date": "9 October 2026",
+      "text": "⚠️ iPhone 18 Pro déjà sorti (9/09) ! Reprise iPhone 15 Plus jusqu'à 426€ (CompaRecycle). Forfait 5G dès 8,99€/mois chez Lebara (250 Go)."
     }
   ],
   "reprise": {
@@ -1360,13 +1360,13 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-10-08"
+      "lastUpdate": "2026-10-09"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-10-08"
+      "lastUpdate": "2026-10-09"
     },
     "sosh": {
       "price": 11.99,
@@ -1378,7 +1378,7 @@
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-10-08"
+      "lastUpdate": "2026-10-09"
     },
     "nrj": {
       "price": 6.99,
