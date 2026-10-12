@@ -1,11 +1,7 @@
 {
-  "lastUpdate": "2026-10-11",
+  "lastUpdate": "2026-10-12",
   "prices": {
     "amazon": [
-      {
-        "price": 1299,
-        "date": "29/06"
-      },
       {
         "price": 1469,
         "date": "30/06"
@@ -241,13 +237,13 @@
       {
         "price": 1299,
         "date": "10/10"
+      },
+      {
+        "price": 1339,
+        "date": "12/10"
       }
     ],
     "fnac": [
-      {
-        "price": 1479,
-        "date": "13/07"
-      },
       {
         "price": 1479,
         "date": "14/07"
@@ -483,13 +479,13 @@
       {
         "price": 1379,
         "date": "11/10"
+      },
+      {
+        "price": 1379,
+        "date": "12/10"
       }
     ],
     "cdiscount": [
-      {
-        "price": 1353,
-        "date": "22/06"
-      },
       {
         "price": 1454,
         "date": "23/06"
@@ -725,13 +721,13 @@
       {
         "price": 1294,
         "date": "11/10"
+      },
+      {
+        "price": 1339,
+        "date": "12/10"
       }
     ],
     "idealo": [
-      {
-        "price": 1278,
-        "date": "01/07"
-      },
       {
         "price": 1262,
         "date": "02/07"
@@ -967,14 +963,14 @@
       {
         "price": 1309,
         "date": "07/10"
+      },
+      {
+        "price": 1339,
+        "date": "12/10"
       }
     ]
   },
   "news": [
-    {
-      "date": "22 juin 2026",
-      "text": "📉 Amazon : iPhone 17 Pro Max 256 Go à 1 309 € (-170 €). Idealo dès 1 179 € via Rakuten. Soldes d'été 2026 en approche."
-    },
     {
       "date": "23 juin 2026",
       "text": "🔥 Amazon Prime Day : iPhone 17 Pro Max 256 Go à 1 310 € — prix record chez Amazon, -169 € sur le tarif officiel !"
@@ -1330,11 +1326,15 @@
     {
       "date": "11 October 2026",
       "text": "📱 iPhone 17 Pro Max 256Go dès 1294€ (Cdiscount), Fnac stable à 1379€. Reprise 15 Plus 426€ (CompaRecycle). Lebara 250Go à 8,99€/mois, meilleur forfait du moment."
+    },
+    {
+      "date": "12 October 2026",
+      "text": "📈 Reprise iPhone 15 Plus en hausse à 432€ (CompaRecycle). iPhone 17 Pro Max 256Go dès 1339€ (Amazon/Cdiscount), Fnac à 1379€. Lebara 250Go toujours au top à 8,99€/mois."
     }
   ],
   "reprise": {
     "comparecycle": {
-      "max": 426
+      "max": 432
     },
     "apple": {
       "min": 290,
@@ -1368,13 +1368,13 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-10-11"
+      "lastUpdate": "2026-10-12"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-10-10"
+      "lastUpdate": "2026-10-12"
     },
     "sosh": {
       "price": 13.99,
@@ -1386,7 +1386,7 @@
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-10-11"
+      "lastUpdate": "2026-10-12"
     },
     "nrj": {
       "price": 6.99,
