@@ -1,11 +1,7 @@
 {
-  "lastUpdate": "2026-10-12",
+  "lastUpdate": "2026-10-13",
   "prices": {
     "amazon": [
-      {
-        "price": 1469,
-        "date": "30/06"
-      },
       {
         "price": 1314,
         "date": "01/07"
@@ -241,6 +237,10 @@
       {
         "price": 1339,
         "date": "12/10"
+      },
+      {
+        "price": 1260,
+        "date": "13/10"
       }
     ],
     "fnac": [
@@ -488,10 +488,6 @@
     "cdiscount": [
       {
         "price": 1454,
-        "date": "23/06"
-      },
-      {
-        "price": 1454,
         "date": "27/06"
       },
       {
@@ -725,6 +721,10 @@
       {
         "price": 1339,
         "date": "12/10"
+      },
+      {
+        "price": 1309,
+        "date": "13/10"
       }
     ],
     "idealo": [
@@ -971,10 +971,6 @@
     ]
   },
   "news": [
-    {
-      "date": "23 juin 2026",
-      "text": "🔥 Amazon Prime Day : iPhone 17 Pro Max 256 Go à 1 310 € — prix record chez Amazon, -169 € sur le tarif officiel !"
-    },
     {
       "date": "24 juin 2026",
       "text": "🔥 Amazon : iPhone 17 Pro Max 256 Go à 1309 € au lieu de 1479 € (-170 €), Idealo dès 1179 €"
@@ -1330,6 +1326,10 @@
     {
       "date": "12 October 2026",
       "text": "📈 Reprise iPhone 15 Plus en hausse à 432€ (CompaRecycle). iPhone 17 Pro Max 256Go dès 1339€ (Amazon/Cdiscount), Fnac à 1379€. Lebara 250Go toujours au top à 8,99€/mois."
+    },
+    {
+      "date": "13 October 2026",
+      "text": "📉 iPhone 17 Pro Max 256 Go dès 1260€ chez Amazon (vs 1479€). Lebara reste a 8,99€/250Go. NRJ Mobile a retire son forfait 120 Go."
     }
   ],
   "reprise": {
@@ -1368,25 +1368,25 @@
       "price": 15.99,
       "data": "250 Go",
       "label": "Red by SFR",
-      "lastUpdate": "2026-10-12"
+      "lastUpdate": "2026-10-13"
     },
     "byu": {
       "price": 15.99,
       "data": "200 Go",
       "label": "B&You (Bouygues)",
-      "lastUpdate": "2026-10-12"
+      "lastUpdate": "2026-10-13"
     },
     "sosh": {
-      "price": 13.99,
+      "price": 11.99,
       "data": "150 Go",
       "label": "Sosh (Orange)",
-      "lastUpdate": "2026-10-11"
+      "lastUpdate": "2026-10-13"
     },
     "lebara": {
       "price": 8.99,
       "data": "250 Go",
       "label": "Lebara",
-      "lastUpdate": "2026-10-12"
+      "lastUpdate": "2026-10-13"
     },
     "nrj": {
       "price": 6.99,
